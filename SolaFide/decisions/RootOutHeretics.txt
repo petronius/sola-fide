@@ -1,0 +1,41 @@
+country_decisions = {
+
+	sola_fide_root_out_heretics = {
+		major = no
+		potential = {
+			religion = catholic
+			NOT = {
+				has_country_flag = sola_fide_root_out_heretics
+			}
+		}
+		allow = {
+			stability = 0
+		}
+		effect = {
+			add_stability = -1
+			add_prestige = 5
+			add_reform_desire = -0.02
+			PAP = { 
+				add_opinion = {
+					who = ROOT
+					modifier = sola_fide_opinion_pious_prince
+				}
+			}
+			set_country_flag = sola_fide_root_out_heretics
+		}
+		
+		ai_importance = 200
+		ai_will_do = {
+			factor = 0.5
+			modifier = {
+				factor = 0
+				NOT = {
+					prestige = 0
+					stability = 2
+				}
+			}
+		}
+		
+	}
+
+}

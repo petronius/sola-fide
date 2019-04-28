@@ -1,0 +1,33 @@
+Waldensian Events
+---
+
+
+
+
+"Id nostri Cordis"
+
+- Removes 5% Reformation Desire
+- Waldensian Heretics rise up in Piedmont (# depends on reform desire or owner stab?)
+- Causes the event "The Vaudois Crusade" for the current owner of Piedmont
+
+
+"The Vaudois Crusade"
+
+- -2 Stability for the owner of Piedmont
+- Heretics rise up
+
+* "Call for aid!"
+  - +1 stab
+  - + manpower
+* "Let us negotiate a peace!"
+
+
+"Lux Lucent in Tenebris"
+
+(Waldensian victory in Savoy)
+
+- Country becomes Waldensian
+- Gain 2 Stability
+
+* "We will be satisfied with this victory"
+* "We will come down from the valleys!" (Anglican-style center of reformation)
