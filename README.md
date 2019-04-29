@@ -46,3 +46,8 @@ While the debate over the Reformation rages, a small group of pious people beliv
 The Radical Reformation is unlike any other movement in Europe at this time: they seek not just to repudiate the power of the Pope, but to revolutionize society itself. Hated by Protestant and Catholic alike, the zealous and soemtimes violent Anabaptists seek to establish the kingdom of God on Earth.
 
 (Siege of Munster; Zwickau Prophets/German Peasant's War)
+
+### Misc events
+
+* Prussian Union of the Churches
+* Religions minorities/refugees (E.g. Huguenots) [moves dev, can convert provinces]
