@@ -1,0 +1,19 @@
+
+sola_fide_loyal_catholics = {
+	potential = {
+		always = yes
+	}
+	
+	#viewer = {
+	#}
+	
+	trigger = {
+		culture = irish
+		religion = catholic
+	}
+
+
+	local_missionary_strength = -0.20
+	religious_conversion_resistance = 0.2
+
+}

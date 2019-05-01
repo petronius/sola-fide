@@ -1,0 +1,21 @@
+# province
+on_province_religion_converted = {
+	if = {
+		limit = {
+			religion = catholic
+			culture = irish
+		}
+		add_province_triggered_modifier = sola_fide_loyal_catholics
+	}
+}
+
+# province
+on_province_culture_converted = {
+	if = {
+		limit = {
+			religion = catholic
+			culture = irish
+		}
+		add_province_triggered_modifier = sola_fide_loyal_catholics
+	}
+}
