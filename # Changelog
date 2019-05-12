@@ -1,0 +1,42 @@
+# Changelog
+
+## Alpha / v0
+
+### Religions
+
+* Added the Waldensian religion.
+* Added the Hussite religion.
+
+### At game start
+
+* Bohemia now starts as Hussite, as do many of their provinces.
+* The province of Piedmont (Savoy) starts as Waldensian.
+
+### Province modifiers
+
+* Provinces which are both Catholic and Irish will gain the "Loyal Catholics" modifier, reducing missionary strength and CoR conversion chance.
+
+### Events & decisions
+
+[~] Add "Root out heretics" event for Catholic countries with religious minorities
+
+
+### TODO for Alpha:
+
+- Add rebels for new religions
+- Add Loallard religion
+- Add Dissenter religion
+- Add Jewish minorities
+- Add religious minority mechanics
+- Add papal intervention mechanics
+- Add Anabaptist religion
+- Add Waldensian events
+- Add Lollard events
+- Add Anabaptist events
+
+## TODO for Beta:
+
+- Add First and Second Great Awakening
+- Adjust start/end dates
+- Improve Hussite (Utraquist v Taborite) stuff
+- Let religious minority mechanic work with colonial mechanic?

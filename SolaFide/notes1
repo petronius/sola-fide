@@ -85,3 +85,9 @@ The Dissenters object to state interference in religion. Many feel that our stat
 
 * "We must respect their beliefs" - Province becomes a Dissenter religion, chance of center of reformation for this religion
 * "Stamp out this heresy!" - Province becomes a Dissenter religion, no center of reformation, -1 stab
+
+---
+
+Non-christian religious minorities as well
+Generic "expel minority" event for discovered non-christian minorities (-reform desire; +unrest; "recieve minortiy" event for another country); or "inquisition" mechanic (-unrest; -diplo rep); or leave them alone (+unrest)
+Need to distinguish between known minorities (eg Jewish) vs 'secret' ones (eg Baltic Pagan)

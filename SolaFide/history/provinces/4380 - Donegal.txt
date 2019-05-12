@@ -19,7 +19,7 @@ discovered_by = eastern
 
 
 1400.1.1 = {
-	add_province_triggered_modifier = sola_fide_loyal_catholics
+	add_province_triggered_modifier = sola_fide.loyal_catholics
 }
 
 1607.9.4 = {
