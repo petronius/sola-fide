@@ -5,11 +5,23 @@ on_province_religion_converted = {
 			religion = catholic
 			culture = irish
 		}
-		add_province_triggered_modifier = sola_fide_loyal_catholics
+		add_province_triggered_modifier = sola_fide.loyal_catholics
 	}
 	else = {
-		remove_province_triggered_modifier = sola_fide_loyal_catholics
+		remove_province_triggered_modifier = sola_fide.loyal_catholics
 	}
+
+#	if = {
+#		limit = {
+#			has_province_modifier = sola_fide.deeply_rooted_faith
+#		}
+#		clr_province_modifier = sola_fide.deeply_rooted_faith
+#		add_province_modifier = sola_fide.religious_minority
+#		set_variable = {
+#			which = sola_fide.minority_religion
+#			which = sola_fide.deeply_rooted_religion
+#		}
+#	}
 }
 
 # province
@@ -19,9 +31,9 @@ on_province_culture_converted = {
 			religion = catholic
 			culture = irish
 		}
-		add_province_triggered_modifier = sola_fide_loyal_catholics
+		add_province_triggered_modifier = sola_fide.loyal_catholics
 	}
 	else = {
-		remove_province_triggered_modifier = sola_fide_loyal_catholics
+		remove_province_triggered_modifier = sola_fide.loyal_catholics
 	}
 }

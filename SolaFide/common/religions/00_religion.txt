@@ -1560,7 +1560,6 @@ pagan = {
 			galley_power = 0.2
 		}
 		province = {
-			local_missionary_strength = -0.3
 		}
 		
 		personal_deity = yes

@@ -1,5 +1,5 @@
 
-sola_fide_loyal_catholics = {
+sola_fide.loyal_catholics = {
 	potential = {
 		always = yes
 	}
@@ -11,7 +11,6 @@ sola_fide_loyal_catholics = {
 		culture = irish
 		religion = catholic
 	}
-
 
 	local_missionary_strength = -0.20
 	religious_conversion_resistance = 0.2

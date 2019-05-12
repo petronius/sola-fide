@@ -1,4 +1,4 @@
-sola_fide_opinion_pious_prince = {
+sola_fide.opinion_pious_prince = {
 	opinion = 50
 	years = 5
 	yearly_decay = 2
