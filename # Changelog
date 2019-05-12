@@ -21,7 +21,7 @@
 [~] Add "Root out heretics" event for Catholic countries with religious minorities
 
 
-### TODO for Alpha:
+## TODO for Alpha:
 
 - Add rebels for new religions
 - Add Loallard religion
@@ -40,3 +40,9 @@
 - Adjust start/end dates
 - Improve Hussite (Utraquist v Taborite) stuff
 - Let religious minority mechanic work with colonial mechanic?
+
+## TODO for 'release':
+
+- Clean up graphics
+- Adjust modifiers and balance
+- Make sure nothing seems too 'railroady'

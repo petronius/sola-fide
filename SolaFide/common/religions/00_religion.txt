@@ -342,9 +342,10 @@ christian = {
 	}
 
 	dissenter = {
+		# TODO
 	
-		color = { 81 81 81 }
-		icon = 31
+		color = { 51 51 81 }
+		icon = 32
 		
 		allowed_center_conversion = {
 			anglican
@@ -360,6 +361,59 @@ christian = {
 		aspects_name = ANGLICAN_ASPECTS
 	
 		heretic = { RANTER MUGGLETONIAN TRASKITE GRINDLETONIAN FAMILIST FIFTH_MONARCHIST }
+	
+		date = 1558.1.1 # Act of Uniformity
+	
+	}
+
+	anabaptist = {
+		# TODO
+
+		color = { 102 51 51 }
+		icon = 34
+		
+		allowed_center_conversion = {
+			anglican
+			protestant
+			reformed
+			dissenter
+		}
+		
+		aspects = {
+			divorce_consort_aspect
+			gain_consort_aspect
+			dissolve_monasteries_aspect
+			monopoly_aspect
+			stability_aspect
+		}
+		aspects_name = ANGLICAN_ASPECTS
+	
+		heretic = { ANABAPTIST_HERETIC_PLACEHOLDER }
+	
+		date = 1558.1.1 # Act of Uniformity
+	
+	}
+
+	lollard = {
+		# TODO
+	
+		color = { 180 180 81 }
+		icon = 33
+		
+		allowed_center_conversion = {
+			catholic
+		}
+		
+		aspects = {
+			divorce_consort_aspect
+			gain_consort_aspect
+			dissolve_monasteries_aspect
+			monopoly_aspect
+			stability_aspect
+		}
+		aspects_name = ANGLICAN_ASPECTS
+	
+		heretic = { LOLLARD_HERETIC_PLACEHOLDER }
 	
 		date = 1558.1.1 # Act of Uniformity
 	
