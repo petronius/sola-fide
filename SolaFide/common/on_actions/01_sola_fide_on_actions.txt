@@ -1,14 +1,20 @@
 # province
 on_province_religion_converted = {
+	# This appears to work only when converting *away* from catholic, not *to* catholic, and then only when
+	# using actual conversion (you can't set province religion through console command, but you can assign a
+	# missionary and use the console command to boost progress to 100%)
 	if = {
 		limit = {
 			religion = catholic
 			culture = irish
+			NOT = {
+				has_province_modifier = sola_fide.loyal_catholics
+			}
 		}
-		add_province_triggered_modifier = sola_fide.loyal_catholics
+		add_province_modifier = sola_fide.loyal_catholics
 	}
 	else = {
-		remove_province_triggered_modifier = sola_fide.loyal_catholics
+		remove_province_modifier = sola_fide.loyal_catholics
 	}
 
 #	if = {
@@ -26,14 +32,18 @@ on_province_religion_converted = {
 
 # province
 on_province_culture_converted = {
+	# This does not appear to trigger at all (either using console commands or in-game culture conversion)
 	if = {
 		limit = {
 			religion = catholic
 			culture = irish
+			NOT = {
+				has_province_modifier = sola_fide.loyal_catholics
+			}
 		}
-		add_province_triggered_modifier = sola_fide.loyal_catholics
+		add_province_modifier = sola_fide.loyal_catholics
 	}
 	else = {
-		remove_province_triggered_modifier = sola_fide.loyal_catholics
+		remove_province_modifier = sola_fide.loyal_catholics
 	}
 }
