@@ -23,7 +23,6 @@ christian = {
 			reformed
 			protestant
 			waldensian
-			hussite
 		}
 		country = {
 			tolerance_own = 1
@@ -227,43 +226,6 @@ christian = {
 			}			
 		}
 	}
-
-	hussite = {
-		# TODO
-		
-		color = { 102 102 0 }
-		icon = 29
-		
-		allowed_conversion = {}
-		country = {
-			tolerance_own = 1
-			tolerance_heretic = -1
-		}
-		
-		country_as_secondary = {
-			diplomatic_reputation = 1
-			advisor_pool = 1
-		}
-		
-		on_convert = {
-			change_religion = hussite
-			add_prestige = -100
-			
-			remove_country_modifier = the_test_act
-			remove_country_modifier = superintendent_office
-			remove_country_modifier = the_popery_act
-			
-			add_country_modifier = {
-				name = "conversion_zeal"
-				duration = 3650
-			}			
-		
-		}
-		
-		heretic = { TABORITE OREBITE ADAMITE ORPHAN BRETHREN }
-		misguided_heretic = yes
-		
-	}
 	
 	waldensian = {
 		color = { 37 37 119 }
@@ -287,7 +249,7 @@ christian = {
 			anglican
 		}
 	
-		heretic = { RANTER MUGGLETONIAN TRASKITE GRINDLETONIAN FAMILIST FIFTH_MONARCHIST }
+		heretic = { RANTER MUGGLETONIAN TRASKITE GRINDLETONIAN FAMILIST FIFTH_MONARCHIST SHAKER QUAKER LEVELLER PURITAIN ENTHUSIASTS BARROWISTS }
 	
 		date = 1558.1.1 # Act of Uniformity
 	
