@@ -4,8 +4,8 @@ Changelog (TODO list)
 
 Focussing on the 1444 start
 
-- Add Waldensian
-- Add Baltic Pagan
+- ~~Add Waldensian~~
+- ~~Add Baltic Pagan~~
 
 - Add regligious minority mechanic
 	- Provinces can have a "religious minority" mechanic of any active religion (+x% unrest; +x% min local autonomy)
@@ -90,10 +90,17 @@ Focussing on England
 
 # Guillaume Tell: Swiss Wars of Relgion
 
+- Geneva defect to Switzerland if it converts to Reformed or Protestant.
+	- Other conditions: Savoy has more than 1 province; switzerland exists
+
 
 # The First & Second Great Awakenings
 
 Could add Methodists, Baptists, Adventists, LDS, etc.
+
+Gaihwi:io
+
+
 
 # Nabucco: slave revolts and rebellions
 
