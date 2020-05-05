@@ -227,6 +227,7 @@ christian = {
 		}
 	}
 	
+	# sola_fide
 	waldensian = {
 		color = { 37 37 119 }
 		icon = 30
@@ -239,6 +240,7 @@ christian = {
 		heretic = { WALDENSIAN_PLACEHOLDER_HERETIC }
 	}
 
+	# sola_fide
 	dissenter = {
 		# TODO
 	
@@ -255,6 +257,7 @@ christian = {
 	
 	}
 
+	# sola_fide
 	anabaptist = {
 		# TODO
 
@@ -274,6 +277,7 @@ christian = {
 	
 	}
 
+	# sola_fide
 	lollard = {
 		# TODO
 	
@@ -1482,6 +1486,7 @@ pagan = {
 		heretic = { OLD_NORSE }	
 	}
 	
+	# sola_fide
 	baltic_pagan = {
 		icon = 31
 		color = { 0 153 153 }
@@ -1538,9 +1543,18 @@ jewish_group = {
 			local_missionary_strength = -0.02
 		}
 		
+		# sola_fide
+		#
+		# "Misnagdim" just means "opponents". Taken from the anti-Hasidic movement of the 18th and 19th c., but
+		# meant here as an empty placeholder like "particularists" for generic non-religious rebels.
+		#
+		# Using Karaite and Samaritains as Jewish rebells seems weird, especially given their geographic localization,
+		# and the different strands of Judaism they represent through to the present day.
 		heretic = { SABBATEAN MISNAGDIM }
 	}
 
+	# sola_fide
+	#
  	# TODO: Fix color, icon, stats
 	samaritan = {
 		icon = 20
@@ -1561,6 +1575,8 @@ jewish_group = {
 		
 	}
 
+	# sola_fide
+	#
  	# TODO: Fix color, icon, stats
 	karaite = {
 		icon = 20
