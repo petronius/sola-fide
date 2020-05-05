@@ -117,3 +117,4 @@ Dozens of good events to add in the category of slave revolts (Rei Amador et al.
 - Prussian Union of the Churches
 - More Hugenot stuff
 - Torquemada & the Spanish Inquisition
+- More Hugenot stuff: bonuses to countries around France if they expel the hugenots

@@ -51,3 +51,10 @@ sola_fide.religious_minority.tengri_pagan = {}
 
 # Zoroastrian
 sola_fide.religious_minority.zoroastrian = {}
+
+# TODO: Any additional effects?
+sola_fide.expulsion_of_jews = {
+	global_tax_modifier = -0.10
+	technology_cost = 0.1
+	global_institution_spread = -0.1
+}
