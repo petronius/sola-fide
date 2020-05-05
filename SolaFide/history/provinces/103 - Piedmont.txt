@@ -3,7 +3,7 @@
 owner = SAV
 controller = SAV
 culture = piedmontese
-religion = waldensian
+religion = waldensian # sola_fide
 hre = yes
 base_tax = 7 
 base_production = 7

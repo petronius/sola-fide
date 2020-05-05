@@ -1,5 +1,14 @@
 # province
 on_province_religion_converted = {
+	# Copied from base game file to avoid clobbering the default behaviour
+	if = {
+		limit = {
+			religion_group = muslim
+			has_estate = estate_dhimmi
+		}
+		remove_estate = estate_dhimmi
+	}
+
 	# This appears to work only when converting *away* from catholic, not *to* catholic, and then only when
 	# using actual conversion (you can't set province religion through console command, but you can assign a
 	# missionary and use the console command to boost progress to 100%)

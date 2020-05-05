@@ -24,9 +24,6 @@ discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
 
-1400.1.1 = {
-	set_province_flag = sola_fide.religious_minority.baltic_pagan
-}
 1550.1.1 = { religion = reformed }
 1569.7.1 = {
 	owner = PLC
@@ -42,3 +39,9 @@ discovered_by = ottoman
 1795.10.24 = { owner = RUS controller = RUS add_core = RUS } # Annexed by Russia, third partition
 1812.6.28 = { controller = FRA } # Occupied by French troops
 1812.12.10 = { controller = RUS }
+
+# sola_fide
+add_permanent_province_modifier {
+	name = sola_fide.religious_minority.baltic_pagan
+	duration = -1
+}

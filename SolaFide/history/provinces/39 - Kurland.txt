@@ -21,9 +21,6 @@ discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
 
-1400.1.1 = {
-	set_province_flag = sola_fide.religious_minority.baltic_pagan
-}
 #1561.11.28
 1561.1.1 = { owner = KUR
 	controller = KUR
@@ -46,3 +43,9 @@ discovered_by = ottoman
 	controller = RUS
 	add_core = RUS
 } # Third partition of Poland
+
+# sola_fide
+add_permanent_province_modifier {
+	name = sola_fide.religious_minority.baltic_pagan
+	duration = -1
+}

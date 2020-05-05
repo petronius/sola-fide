@@ -19,9 +19,6 @@ discovered_by = eastern
 extra_cost = 8
 center_of_trade = 1
 
-1400.1.1 = {
-	set_province_flag = sola_fide.religious_minority.lollard
-}
 1453.1.1 = { unrest = 5 } # Start of the War of the Roses
 1461.6.1 = { unrest = 2 } # Coronation of Edward IV
 1467.1.1 = { unrest = 5 } # Rivalry between Edward IV & Warwick
@@ -38,4 +35,11 @@ center_of_trade = 1
 	controller = GBR
 	add_core = GBR
 	remove_core = ENG
+}
+
+# sola_fide
+# https://en.wikipedia.org/wiki/Lollardy#/media/File:Lollardmap.jpg
+add_permanent_province_modifier {
+	name = sola_fide.religious_minority.lollard
+	duration = -1
 }

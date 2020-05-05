@@ -18,13 +18,17 @@ discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern
 
-1400.1.1 = {
-	set_province_flag = sola_fide.religious_minority.lollard
-}
 1560.8.1 = { religion = reformed }
 1651.4.1 = { controller = ENG }
 1652.4.21 = { controller = SCO } # Union of Scotland and the Commonwealth
 1707.5.12 = {	owner = GBR
 	controller = GBR
 	add_core = GBR
+}
+
+# sola_fide
+# https://en.wikipedia.org/wiki/Lollardy#/media/File:Lollardmap.jpg
+add_permanent_province_modifier {
+	name = sola_fide.religious_minority.lollard
+	duration = -1
 }

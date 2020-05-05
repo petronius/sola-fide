@@ -3,7 +3,7 @@
 owner = LIT
 controller = LIT
 culture = lithuanian
-religion = baltic_pagan
+religion = baltic_pagan # sola_fide
 capital = "Varniai"
 trade_goods = livestock
 hre = no
