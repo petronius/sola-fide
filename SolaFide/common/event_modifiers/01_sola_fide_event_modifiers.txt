@@ -2,3 +2,52 @@ sola_fide.loyal_catholics = {
 	local_missionary_strength = -0.20
 	religious_conversion_resistance = 0.2
 }
+
+# Christians
+sola_fide.religious_minority.catholic = {}
+sola_fide.religious_minority.protestant = {}
+sola_fide.religious_minority.reformed = {}
+sola_fide.religious_minority.anglican = {}
+sola_fide.religious_minority.reformed = {}
+sola_fide.religious_minority.orthodox = {}
+sola_fide.religious_minority.coptic = {}
+
+sola_fide.religious_minority.lollard = {}
+sola_fide.religious_minority.anabaptist = {}
+sola_fide.religious_minority.waldensian = {}
+sola_fide.religious_minority.dissenter = {}
+
+# Jewish
+sola_fide.religious_minority.jewish = {}
+#sola_fide.religious_minority.samaritan = {}
+#sola_fide.religious_minority.karaite = {}
+
+# Islam
+sola_fide.religious_minority.sunni = {}
+sola_fide.religious_minority.shia = {}
+sola_fide.religious_minority.ibadi = {}
+
+# Eastern
+sola_fide.religious_minority.buddhist = {}
+sola_fide.religious_minority.vajrayana = {}
+sola_fide.religious_minority.mahayana = {}
+sola_fide.religious_minority.confucian = {}
+sola_fide.religious_minority.shinto = {}
+
+# Dharmic
+sola_fide.religious_minority.hindu = {}
+sola_fide.religious_minority.sikh = {}
+
+# Pagan
+sola_fide.religious_minority.animism = {}
+sola_fide.religious_minority.shamanism = {}
+sola_fide.religious_minority.totemism = {}
+sola_fide.religious_minority.inti = {}
+sola_fide.religious_minority.nahuatl = {}
+sola_fide.religious_minority.mesoamerican = {}
+sola_fide.religious_minority.norse_pagan = {}
+sola_fide.religious_minority.baltic_pagan = {}
+sola_fide.religious_minority.tengri_pagan = {}
+
+# Zoroastrian
+sola_fide.religious_minority.zoroastrian = {}

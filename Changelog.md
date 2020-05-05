@@ -5,7 +5,9 @@ Changelog (TODO list)
 Focussing on the 1444 start
 
 - ~~Add Waldensian~~
+	- TODO: Add unique mechanics (copy reformed as basis?)
 - ~~Add Baltic Pagan~~
+	- TODO: Make personal gods unique
 
 - Add regligious minority mechanic
 	- Provinces can have a "religious minority" mechanic of any active religion (+x% unrest; +x% min local autonomy)
@@ -114,3 +116,4 @@ Dozens of good events to add in the category of slave revolts (Rei Amador et al.
 - Changes to how NA natives work to make it more interesting?
 - Prussian Union of the Churches
 - More Hugenot stuff
+- Torquemada & the Spanish Inquisition
