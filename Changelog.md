@@ -118,3 +118,5 @@ Dozens of good events to add in the category of slave revolts (Rei Amador et al.
 - More Hugenot stuff
 - Torquemada & the Spanish Inquisition
 - More Hugenot stuff: bonuses to countries around France if they expel the hugenots
+- Rise of Hasidism (PLC)
+- Kemal Reis expedition to Spain
