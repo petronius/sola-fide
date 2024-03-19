@@ -5,3 +5,4 @@ tags = {
  "Historical"
  "Religion"
 }
+replace_path = "gfx/loadingscreens"
