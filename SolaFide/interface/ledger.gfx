@@ -71,21 +71,21 @@ spriteTypes = {
 		name = "GFX_ledger_piechart_overlay"
 		texturefile = "gfx\\interface\\ledger_piechart_overlay.tga"
 		transparencecheck = yes
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 	
 	spriteType = {
 		name = "GFX_ledger_piechart_BG"
 		texturefile = "gfx\\interface\\ledger_piechart_BG.tga"
 		transparencecheck = yes
-		allwaystransparent = yes		
+		alwaystransparent = yes		
 	}
 	
 	spriteType = {
 		name = "GFX_ledger_index_BG"
 		texturefile = "gfx\\interface\\ledger_index_BG.tga"
 		transparencecheck = no
-        allwaystransparent = yes
+        alwaystransparent = yes
 	}
 
 	spriteType = {
@@ -104,6 +104,18 @@ spriteTypes = {
 		texturefile = "gfx\\interface\\ledger_invisible_button.tga"
 		transparencecheck = no
 	}	
+
+	spriteType = {
+		name = "GFX_ledger_invisible_button60x17"
+		texturefile = "gfx\interface\rivals\ledger_invisible_button_60x17.dds"
+		transparencecheck = no
+	}	
+
+	spriteType = {
+		name = "GFX_ledger_invisible_button65x26"
+		texturefile = "gfx\interface\rivals\ledger_invisible_button_65x26.dds"
+		transparencecheck = no
+	}
 	
 	spriteType = {
 		name = "GFX_ledger_linegraph_bg"
@@ -132,12 +144,18 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ledger_filter_bg"
 		texturefile = "gfx\\interface\\ledger_filter_bg.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
 	}
 
 	spriteType = {
 		name = "GFX_ledger_filter_icon"
 		texturefile = "gfx\\interface\\icon_ledger_filter.dds"
-		allwaystransparent = yes
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_ledger_great_projects_bg"
+		texturefile = "gfx\\interface\\ledger_great_projects_bg.dds"
+		alwaystransparent = yes
 	}
 }
