@@ -1,4 +1,4 @@
-﻿namespace = sola_fide
+namespace = sola_fide
 
 # The goal with the religious minorities mechanic is as follows:
 # 	1. When converting a province, there is a chance to trigger the entrenchment of that religion (event)

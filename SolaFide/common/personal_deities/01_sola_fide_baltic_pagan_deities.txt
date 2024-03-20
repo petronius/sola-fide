@@ -5,7 +5,7 @@ dievas = {
 	horde_unity = 0.1
 	core_creation = -0.10
 	
-	allow = { religion = baltic_pagan }
+	#allow = { religion = baltic_pagan }
 	sprite = 7
 	
 	ai_will_do = {
@@ -25,7 +25,7 @@ dalia = {
 	global_manpower_modifier = 0.1
 	global_tax_modifier = 0.1
 	
-	allow = { religion = baltic_pagan }
+	#allow = { religion = baltic_pagan }
 	sprite = 8
 	
 	ai_will_do = {
@@ -45,7 +45,7 @@ gabija = {
 	leader_land_shock = 1
 	defensiveness = 0.1
 	
-	allow = { religion = baltic_pagan }
+	#allow = { religion = baltic_pagan }
 	sprite = 9
 	
 	ai_will_do = {
@@ -78,7 +78,7 @@ laima =
 	global_sailors_modifier = 0.10
 	discipline = 0.05
 	
-	allow = { religion = baltic_pagan }
+	#allow = { religion = baltic_pagan }
 	sprite = 10
 	
 	ai_will_do = {
@@ -98,7 +98,7 @@ aushrine = {
 	trade_efficiency = 0.1
 	global_trade_goods_size_modifier = 0.1
 	
-	allow = { religion = baltic_pagan }
+	#allow = { religion = baltic_pagan }
 	sprite = 11
 	
 	ai_will_do = {
@@ -123,7 +123,7 @@ szemyna = {
 	technology_cost = -0.05
 	build_cost = -0.1
 	
-	allow = { religion = baltic_pagan }
+	#allow = { religion = baltic_pagan }
 	sprite = 12
 	
 	ai_will_do = {

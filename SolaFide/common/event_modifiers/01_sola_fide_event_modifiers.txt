@@ -1,6 +1,10 @@
 sola_fide.loyal_catholics = {
 	local_missionary_strength = -0.20
-	religious_conversion_resistance = 0.2
+	#religious_conversion_resistance = 0.2
 	local_unrest = -1
 	picture = "dhimmi_loyalty_modifier"
+}
+
+sola_fide.expulsion_of_jews = {
+
 }

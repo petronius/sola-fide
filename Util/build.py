@@ -59,5 +59,10 @@ if __name__ == "__main__":
 
 				template_contents = open(template_full_path).read()
 				template = SimpleTemplate(template_contents)
-				with open(outfile_full_path, "w", encoding='utf-8-sig') as fp:
+				
+				# dont use bom for non-lang files 
+				if "_l_" in file: enc = "utf-8-sig"
+				else: enc = "utf-8"
+				
+				with open(outfile_full_path, "w", encoding=enc) as fp:
 					fp.write(template.render(**ctx))
