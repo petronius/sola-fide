@@ -70,7 +70,7 @@ base_production = 13 }
 
 # sola_fide
 # https://en.wikipedia.org/wiki/Lollardy#/media/File:Lollardmap.jpg
-add_permanent_province_modifier {
+add_permanent_province_modifier = {
 	name = sola_fide.religious_minority.lollard
 	duration = -1
 }

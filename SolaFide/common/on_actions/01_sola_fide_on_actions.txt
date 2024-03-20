@@ -1,14 +1,7 @@
 # province
 on_province_religion_converted = {
-	# Copied from base game file to avoid clobbering the default behaviour
-	if = {
-		limit = {
-			religion_group = muslim
-			has_estate = estate_dhimmi
-		}
-		remove_estate = estate_dhimmi
-	}
-
+	on_province_religion_changed_effect = yes
+	on_province_religion_converted_effect = yes
 	if = {
 		limit = {
 			culture = irish

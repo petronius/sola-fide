@@ -1,0 +1,126 @@
+sola_fide.loyal_catholics = {
+	local_missionary_strength = -0.20
+	religious_conversion_resistance = 0.2
+	local_unrest = -1
+	picture = "dhimmi_loyalty_modifier"
+}
+
+# Christians
+sola_fide.religious_minority.catholic = {
+	local_unrest = 0.5
+}
+sola_fide.religious_minority.protestant = {
+	local_unrest = 0.5
+}
+sola_fide.religious_minority.reformed = {
+	local_unrest = 0.5
+}
+sola_fide.religious_minority.anglican = {
+	local_unrest = 0.5
+}
+sola_fide.religious_minority.reformed = {
+	local_unrest = 0.5
+}
+sola_fide.religious_minority.orthodox = {
+	local_unrest = 0.5
+}
+sola_fide.religious_minority.coptic = {
+	local_unrest = 0.5
+}
+
+sola_fide.religious_minority.lollard = {
+	local_unrest = 0.5
+}
+sola_fide.religious_minority.anabaptist = {
+	local_unrest = 0.5
+}
+sola_fide.religious_minority.waldensian = {
+	local_unrest = 0.5
+}
+sola_fide.religious_minority.dissenter = {
+	local_unrest = 0.5
+}
+
+# Jewish
+sola_fide.religious_minority.jewish = {
+	local_unrest = 0.5
+}
+#sola_fide.religious_minority.samaritan = {}
+#sola_fide.religious_minority.karaite = {}
+
+# Islam
+sola_fide.religious_minority.sunni = {
+	local_unrest = 0.5
+}
+sola_fide.religious_minority.shia = {
+	local_unrest = 0.5
+}
+sola_fide.religious_minority.ibadi = {
+	local_unrest = 0.5
+}
+
+# Eastern
+sola_fide.religious_minority.buddhist = {
+	local_unrest = 0.5
+}
+sola_fide.religious_minority.vajrayana = {
+	local_unrest = 0.5
+}
+sola_fide.religious_minority.mahayana = {
+	local_unrest = 0.5
+}
+sola_fide.religious_minority.confucian = {
+	local_unrest = 0.5
+}
+sola_fide.religious_minority.shinto = {
+	local_unrest = 0.5
+}
+
+# Dharmic
+sola_fide.religious_minority.hindu = {
+	local_unrest = 0.5
+}
+sola_fide.religious_minority.sikh = {
+	local_unrest = 0.5
+}
+
+# Pagan
+sola_fide.religious_minority.animism = {
+	local_unrest = 0.5
+}
+sola_fide.religious_minority.shamanism = {
+	local_unrest = 0.5
+}
+sola_fide.religious_minority.totemism = {
+	local_unrest = 0.5
+}
+sola_fide.religious_minority.inti = {
+	local_unrest = 0.5
+}
+sola_fide.religious_minority.nahuatl = {
+	local_unrest = 0.5
+}
+sola_fide.religious_minority.mesoamerican = {
+	local_unrest = 0.5
+}
+sola_fide.religious_minority.norse_pagan = {
+	local_unrest = 0.5
+}
+sola_fide.religious_minority.baltic_pagan = {
+	local_unrest = 0.5
+}
+sola_fide.religious_minority.tengri_pagan = {
+	local_unrest = 0.5
+}
+
+# Zoroastrian
+sola_fide.religious_minority.zoroastrian = {
+	local_unrest = 0.5
+}
+
+# TODO: Any additional effects?
+sola_fide.expulsion_of_jews = {
+	global_tax_modifier = -0.10
+	technology_cost = 0.1
+	global_institution_spread = -0.1
+}

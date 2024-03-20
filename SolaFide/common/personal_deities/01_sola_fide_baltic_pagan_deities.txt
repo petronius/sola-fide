@@ -1,7 +1,6 @@
 # TODO: fix the stats/AI behaviours for these. Ideas from https://en.wikipedia.org/wiki/List_of_Lithuanian_gods_and_mythological_figures#Gods
 
-dievas =
-{
+dievas = {
 	legitimacy = 0.1
 	horde_unity = 0.1
 	core_creation = -0.10
@@ -22,8 +21,7 @@ dievas =
 	}
 }
 
-dalia =
-{
+dalia = {
 	global_manpower_modifier = 0.1
 	global_tax_modifier = 0.1
 	
@@ -43,8 +41,7 @@ dalia =
 	}
 }
 
-gabija =
-{
+gabija = {
 	leader_land_shock = 1
 	defensiveness = 0.1
 	
@@ -97,8 +94,7 @@ laima =
 	}
 }
 
-aushrine =
-{
+aushrine = {
 	trade_efficiency = 0.1
 	global_trade_goods_size_modifier = 0.1
 	
@@ -123,8 +119,7 @@ aushrine =
 }
 
 
-szemyna =
-{
+szemyna = {
 	technology_cost = -0.05
 	build_cost = -0.1
 	

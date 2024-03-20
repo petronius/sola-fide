@@ -38,7 +38,7 @@ discovered_by = ottoman
 1812.12.10 = { controller = RUS }
 
 # sola_fide
-add_permanent_province_modifier {
+add_permanent_province_modifier = {
 	name = sola_fide.religious_minority.baltic_pagan
 	duration = -1
 }

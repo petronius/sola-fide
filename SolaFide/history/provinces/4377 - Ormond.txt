@@ -41,7 +41,7 @@ discovered_by = eastern
 }
 
 # sola_fide
-add_permanent_province_modifier {
+add_permanent_province_modifier = {
 	name = sola_fide.loyal_catholics
 	duration = -1
 }
