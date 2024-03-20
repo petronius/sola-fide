@@ -476,4 +476,232 @@ province_event = {
 	}
 }
 
-#province_event = {}
+namespace = sola_fide_debug
+
+province_event = {
+	
+	id = sola_fide_debug.1
+	title = "sola_fide_debug_convert_all_minortiy_provinces_title"
+	desc = "sola_fide_debug_convert_all_minortiy_provinces_desc"
+	picture = "RELIGION_eventPicture"
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {}
+
+	immediate = {
+		hidden_effect = {
+			every_province = {
+					if = {
+						limit = {
+							has_province_modifier = sola_fide.religious_minority.catholic
+						}
+						change_religion = catholic
+					}
+					if = {
+						limit = {
+							has_province_modifier = sola_fide.religious_minority.protestant
+						}
+						change_religion = protestant
+					}
+					if = {
+						limit = {
+							has_province_modifier = sola_fide.religious_minority.reformed
+						}
+						change_religion = reformed
+					}
+					if = {
+						limit = {
+							has_province_modifier = sola_fide.religious_minority.anglican
+						}
+						change_religion = anglican
+					}
+					if = {
+						limit = {
+							has_province_modifier = sola_fide.religious_minority.orthodox
+						}
+						change_religion = orthodox
+					}
+					if = {
+						limit = {
+							has_province_modifier = sola_fide.religious_minority.coptic
+						}
+						change_religion = coptic
+					}
+					if = {
+						limit = {
+							has_province_modifier = sola_fide.religious_minority.lollard
+						}
+						change_religion = lollard
+					}
+					if = {
+						limit = {
+							has_province_modifier = sola_fide.religious_minority.anabaptist
+						}
+						change_religion = anabaptist
+					}
+					if = {
+						limit = {
+							has_province_modifier = sola_fide.religious_minority.waldensian
+						}
+						change_religion = waldensian
+					}
+					if = {
+						limit = {
+							has_province_modifier = sola_fide.religious_minority.dissenter
+						}
+						change_religion = dissenter
+					}
+					if = {
+						limit = {
+							has_province_modifier = sola_fide.religious_minority.jewish
+						}
+						change_religion = jewish
+					}
+					if = {
+						limit = {
+							has_province_modifier = sola_fide.religious_minority.karaite
+						}
+						change_religion = karaite
+					}
+					if = {
+						limit = {
+							has_province_modifier = sola_fide.religious_minority.samaritan
+						}
+						change_religion = samaritan
+					}
+					if = {
+						limit = {
+							has_province_modifier = sola_fide.religious_minority.sunni
+						}
+						change_religion = sunni
+					}
+					if = {
+						limit = {
+							has_province_modifier = sola_fide.religious_minority.shia
+						}
+						change_religion = shia
+					}
+					if = {
+						limit = {
+							has_province_modifier = sola_fide.religious_minority.ibadi
+						}
+						change_religion = ibadi
+					}
+					if = {
+						limit = {
+							has_province_modifier = sola_fide.religious_minority.buddhist
+						}
+						change_religion = buddhist
+					}
+					if = {
+						limit = {
+							has_province_modifier = sola_fide.religious_minority.vajrayana
+						}
+						change_religion = vajrayana
+					}
+					if = {
+						limit = {
+							has_province_modifier = sola_fide.religious_minority.mahayana
+						}
+						change_religion = mahayana
+					}
+					if = {
+						limit = {
+							has_province_modifier = sola_fide.religious_minority.confucian
+						}
+						change_religion = confucian
+					}
+					if = {
+						limit = {
+							has_province_modifier = sola_fide.religious_minority.shinto
+						}
+						change_religion = shinto
+					}
+					if = {
+						limit = {
+							has_province_modifier = sola_fide.religious_minority.hindu
+						}
+						change_religion = hindu
+					}
+					if = {
+						limit = {
+							has_province_modifier = sola_fide.religious_minority.sikh
+						}
+						change_religion = sikh
+					}
+					if = {
+						limit = {
+							has_province_modifier = sola_fide.religious_minority.animism
+						}
+						change_religion = animism
+					}
+					if = {
+						limit = {
+							has_province_modifier = sola_fide.religious_minority.shamanism
+						}
+						change_religion = shamanism
+					}
+					if = {
+						limit = {
+							has_province_modifier = sola_fide.religious_minority.totemism
+						}
+						change_religion = totemism
+					}
+					if = {
+						limit = {
+							has_province_modifier = sola_fide.religious_minority.inti
+						}
+						change_religion = inti
+					}
+					if = {
+						limit = {
+							has_province_modifier = sola_fide.religious_minority.nahuatl
+						}
+						change_religion = nahuatl
+					}
+					if = {
+						limit = {
+							has_province_modifier = sola_fide.religious_minority.mesoamerican
+						}
+						change_religion = mesoamerican
+					}
+					if = {
+						limit = {
+							has_province_modifier = sola_fide.religious_minority.norse_pagan
+						}
+						change_religion = norse_pagan
+					}
+					if = {
+						limit = {
+							has_province_modifier = sola_fide.religious_minority.baltic_pagan
+						}
+						change_religion = baltic_pagan
+					}
+					if = {
+						limit = {
+							has_province_modifier = sola_fide.religious_minority.tengri_pagan
+						}
+						change_religion = tengri_pagan
+					}
+					if = {
+						limit = {
+							has_province_modifier = sola_fide.religious_minority.zoroastrian
+						}
+						change_religion = zoroastrian
+					}
+					if = {
+						limit = {
+							has_province_modifier = sola_fide.religious_minority.dreamtime
+						}
+						change_religion = dreamtime
+					}
+			}
+		}
+	}
+
+	option = {
+		name = "SOLA_FIDE_RELIGION_ENTRENCHED_ACCEPT"
+	}
+}

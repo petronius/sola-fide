@@ -15,9 +15,7 @@ on_province_religion_converted = {
 			name = sola_fide.religious_minority.catholic
 			duration = -1
 		}
-		remove_province_modifier = {
-			name = sola_fide.religion_entrenched.catholic
-		}
+		remove_province_modifier = sola_fide.religion_entrenched.catholic
 	}
 	if = {
 		limit = {
@@ -27,9 +25,7 @@ on_province_religion_converted = {
 			name = sola_fide.religious_minority.protestant
 			duration = -1
 		}
-		remove_province_modifier = {
-			name = sola_fide.religion_entrenched.protestant
-		}
+		remove_province_modifier = sola_fide.religion_entrenched.protestant
 	}
 	if = {
 		limit = {
@@ -39,9 +35,7 @@ on_province_religion_converted = {
 			name = sola_fide.religious_minority.reformed
 			duration = -1
 		}
-		remove_province_modifier = {
-			name = sola_fide.religion_entrenched.reformed
-		}
+		remove_province_modifier = sola_fide.religion_entrenched.reformed
 	}
 	if = {
 		limit = {
@@ -51,9 +45,7 @@ on_province_religion_converted = {
 			name = sola_fide.religious_minority.anglican
 			duration = -1
 		}
-		remove_province_modifier = {
-			name = sola_fide.religion_entrenched.anglican
-		}
+		remove_province_modifier = sola_fide.religion_entrenched.anglican
 	}
 	if = {
 		limit = {
@@ -63,9 +55,7 @@ on_province_religion_converted = {
 			name = sola_fide.religious_minority.orthodox
 			duration = -1
 		}
-		remove_province_modifier = {
-			name = sola_fide.religion_entrenched.orthodox
-		}
+		remove_province_modifier = sola_fide.religion_entrenched.orthodox
 	}
 	if = {
 		limit = {
@@ -75,9 +65,7 @@ on_province_religion_converted = {
 			name = sola_fide.religious_minority.coptic
 			duration = -1
 		}
-		remove_province_modifier = {
-			name = sola_fide.religion_entrenched.coptic
-		}
+		remove_province_modifier = sola_fide.religion_entrenched.coptic
 	}
 	if = {
 		limit = {
@@ -87,9 +75,7 @@ on_province_religion_converted = {
 			name = sola_fide.religious_minority.lollard
 			duration = -1
 		}
-		remove_province_modifier = {
-			name = sola_fide.religion_entrenched.lollard
-		}
+		remove_province_modifier = sola_fide.religion_entrenched.lollard
 	}
 	if = {
 		limit = {
@@ -99,9 +85,7 @@ on_province_religion_converted = {
 			name = sola_fide.religious_minority.anabaptist
 			duration = -1
 		}
-		remove_province_modifier = {
-			name = sola_fide.religion_entrenched.anabaptist
-		}
+		remove_province_modifier = sola_fide.religion_entrenched.anabaptist
 	}
 	if = {
 		limit = {
@@ -111,9 +95,7 @@ on_province_religion_converted = {
 			name = sola_fide.religious_minority.waldensian
 			duration = -1
 		}
-		remove_province_modifier = {
-			name = sola_fide.religion_entrenched.waldensian
-		}
+		remove_province_modifier = sola_fide.religion_entrenched.waldensian
 	}
 	if = {
 		limit = {
@@ -123,9 +105,7 @@ on_province_religion_converted = {
 			name = sola_fide.religious_minority.dissenter
 			duration = -1
 		}
-		remove_province_modifier = {
-			name = sola_fide.religion_entrenched.dissenter
-		}
+		remove_province_modifier = sola_fide.religion_entrenched.dissenter
 	}
 	if = {
 		limit = {
@@ -135,9 +115,7 @@ on_province_religion_converted = {
 			name = sola_fide.religious_minority.jewish
 			duration = -1
 		}
-		remove_province_modifier = {
-			name = sola_fide.religion_entrenched.jewish
-		}
+		remove_province_modifier = sola_fide.religion_entrenched.jewish
 	}
 	if = {
 		limit = {
@@ -147,9 +125,7 @@ on_province_religion_converted = {
 			name = sola_fide.religious_minority.karaite
 			duration = -1
 		}
-		remove_province_modifier = {
-			name = sola_fide.religion_entrenched.karaite
-		}
+		remove_province_modifier = sola_fide.religion_entrenched.karaite
 	}
 	if = {
 		limit = {
@@ -159,9 +135,7 @@ on_province_religion_converted = {
 			name = sola_fide.religious_minority.samaritan
 			duration = -1
 		}
-		remove_province_modifier = {
-			name = sola_fide.religion_entrenched.samaritan
-		}
+		remove_province_modifier = sola_fide.religion_entrenched.samaritan
 	}
 	if = {
 		limit = {
@@ -171,9 +145,7 @@ on_province_religion_converted = {
 			name = sola_fide.religious_minority.sunni
 			duration = -1
 		}
-		remove_province_modifier = {
-			name = sola_fide.religion_entrenched.sunni
-		}
+		remove_province_modifier = sola_fide.religion_entrenched.sunni
 	}
 	if = {
 		limit = {
@@ -183,9 +155,7 @@ on_province_religion_converted = {
 			name = sola_fide.religious_minority.shia
 			duration = -1
 		}
-		remove_province_modifier = {
-			name = sola_fide.religion_entrenched.shia
-		}
+		remove_province_modifier = sola_fide.religion_entrenched.shia
 	}
 	if = {
 		limit = {
@@ -195,9 +165,7 @@ on_province_religion_converted = {
 			name = sola_fide.religious_minority.ibadi
 			duration = -1
 		}
-		remove_province_modifier = {
-			name = sola_fide.religion_entrenched.ibadi
-		}
+		remove_province_modifier = sola_fide.religion_entrenched.ibadi
 	}
 	if = {
 		limit = {
@@ -207,9 +175,7 @@ on_province_religion_converted = {
 			name = sola_fide.religious_minority.buddhist
 			duration = -1
 		}
-		remove_province_modifier = {
-			name = sola_fide.religion_entrenched.buddhist
-		}
+		remove_province_modifier = sola_fide.religion_entrenched.buddhist
 	}
 	if = {
 		limit = {
@@ -219,9 +185,7 @@ on_province_religion_converted = {
 			name = sola_fide.religious_minority.vajrayana
 			duration = -1
 		}
-		remove_province_modifier = {
-			name = sola_fide.religion_entrenched.vajrayana
-		}
+		remove_province_modifier = sola_fide.religion_entrenched.vajrayana
 	}
 	if = {
 		limit = {
@@ -231,9 +195,7 @@ on_province_religion_converted = {
 			name = sola_fide.religious_minority.mahayana
 			duration = -1
 		}
-		remove_province_modifier = {
-			name = sola_fide.religion_entrenched.mahayana
-		}
+		remove_province_modifier = sola_fide.religion_entrenched.mahayana
 	}
 	if = {
 		limit = {
@@ -243,9 +205,7 @@ on_province_religion_converted = {
 			name = sola_fide.religious_minority.confucian
 			duration = -1
 		}
-		remove_province_modifier = {
-			name = sola_fide.religion_entrenched.confucian
-		}
+		remove_province_modifier = sola_fide.religion_entrenched.confucian
 	}
 	if = {
 		limit = {
@@ -255,9 +215,7 @@ on_province_religion_converted = {
 			name = sola_fide.religious_minority.shinto
 			duration = -1
 		}
-		remove_province_modifier = {
-			name = sola_fide.religion_entrenched.shinto
-		}
+		remove_province_modifier = sola_fide.religion_entrenched.shinto
 	}
 	if = {
 		limit = {
@@ -267,9 +225,7 @@ on_province_religion_converted = {
 			name = sola_fide.religious_minority.hindu
 			duration = -1
 		}
-		remove_province_modifier = {
-			name = sola_fide.religion_entrenched.hindu
-		}
+		remove_province_modifier = sola_fide.religion_entrenched.hindu
 	}
 	if = {
 		limit = {
@@ -279,9 +235,7 @@ on_province_religion_converted = {
 			name = sola_fide.religious_minority.sikh
 			duration = -1
 		}
-		remove_province_modifier = {
-			name = sola_fide.religion_entrenched.sikh
-		}
+		remove_province_modifier = sola_fide.religion_entrenched.sikh
 	}
 	if = {
 		limit = {
@@ -291,9 +245,7 @@ on_province_religion_converted = {
 			name = sola_fide.religious_minority.animism
 			duration = -1
 		}
-		remove_province_modifier = {
-			name = sola_fide.religion_entrenched.animism
-		}
+		remove_province_modifier = sola_fide.religion_entrenched.animism
 	}
 	if = {
 		limit = {
@@ -303,9 +255,7 @@ on_province_religion_converted = {
 			name = sola_fide.religious_minority.shamanism
 			duration = -1
 		}
-		remove_province_modifier = {
-			name = sola_fide.religion_entrenched.shamanism
-		}
+		remove_province_modifier = sola_fide.religion_entrenched.shamanism
 	}
 	if = {
 		limit = {
@@ -315,9 +265,7 @@ on_province_religion_converted = {
 			name = sola_fide.religious_minority.totemism
 			duration = -1
 		}
-		remove_province_modifier = {
-			name = sola_fide.religion_entrenched.totemism
-		}
+		remove_province_modifier = sola_fide.religion_entrenched.totemism
 	}
 	if = {
 		limit = {
@@ -327,9 +275,7 @@ on_province_religion_converted = {
 			name = sola_fide.religious_minority.inti
 			duration = -1
 		}
-		remove_province_modifier = {
-			name = sola_fide.religion_entrenched.inti
-		}
+		remove_province_modifier = sola_fide.religion_entrenched.inti
 	}
 	if = {
 		limit = {
@@ -339,9 +285,7 @@ on_province_religion_converted = {
 			name = sola_fide.religious_minority.nahuatl
 			duration = -1
 		}
-		remove_province_modifier = {
-			name = sola_fide.religion_entrenched.nahuatl
-		}
+		remove_province_modifier = sola_fide.religion_entrenched.nahuatl
 	}
 	if = {
 		limit = {
@@ -351,9 +295,7 @@ on_province_religion_converted = {
 			name = sola_fide.religious_minority.mesoamerican
 			duration = -1
 		}
-		remove_province_modifier = {
-			name = sola_fide.religion_entrenched.mesoamerican
-		}
+		remove_province_modifier = sola_fide.religion_entrenched.mesoamerican
 	}
 	if = {
 		limit = {
@@ -363,9 +305,7 @@ on_province_religion_converted = {
 			name = sola_fide.religious_minority.norse_pagan
 			duration = -1
 		}
-		remove_province_modifier = {
-			name = sola_fide.religion_entrenched.norse_pagan
-		}
+		remove_province_modifier = sola_fide.religion_entrenched.norse_pagan
 	}
 	if = {
 		limit = {
@@ -375,9 +315,7 @@ on_province_religion_converted = {
 			name = sola_fide.religious_minority.baltic_pagan
 			duration = -1
 		}
-		remove_province_modifier = {
-			name = sola_fide.religion_entrenched.baltic_pagan
-		}
+		remove_province_modifier = sola_fide.religion_entrenched.baltic_pagan
 	}
 	if = {
 		limit = {
@@ -387,9 +325,7 @@ on_province_religion_converted = {
 			name = sola_fide.religious_minority.tengri_pagan
 			duration = -1
 		}
-		remove_province_modifier = {
-			name = sola_fide.religion_entrenched.tengri_pagan
-		}
+		remove_province_modifier = sola_fide.religion_entrenched.tengri_pagan
 	}
 	if = {
 		limit = {
@@ -399,9 +335,7 @@ on_province_religion_converted = {
 			name = sola_fide.religious_minority.zoroastrian
 			duration = -1
 		}
-		remove_province_modifier = {
-			name = sola_fide.religion_entrenched.zoroastrian
-		}
+		remove_province_modifier = sola_fide.religion_entrenched.zoroastrian
 	}
 	if = {
 		limit = {
@@ -411,9 +345,7 @@ on_province_religion_converted = {
 			name = sola_fide.religious_minority.dreamtime
 			duration = -1
 		}
-		remove_province_modifier = {
-			name = sola_fide.religion_entrenched.dreamtime
-		}
+		remove_province_modifier = sola_fide.religion_entrenched.dreamtime
 	}
 
 }

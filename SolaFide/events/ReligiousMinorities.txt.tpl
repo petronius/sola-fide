@@ -51,4 +51,43 @@ province_event = {
 	}
 }
 
-#province_event = {}
+namespace = sola_fide_debug
+
+# This is strictly for debugging, to quickly visualize which provinces have what religious minority.
+# (Won't help if a provice has more than one minority, which is certainly possible, but has been added mostly
+# to help with game setup.)
+#
+# To run, execute on the console:
+# 	event sola_fide_debug.1
+#
+province_event = {
+	
+	id = sola_fide_debug.1
+	title = "sola_fide_debug_convert_all_minortiy_provinces_title"
+	desc = "sola_fide_debug_convert_all_minortiy_provinces_desc"
+	picture = "RELIGION_eventPicture"
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {}
+
+	immediate = {
+		hidden_effect = {
+			every_province = {
+				% for religion, name in religions.items():
+					if = {
+						limit = {
+							has_province_modifier = sola_fide.religious_minority.{{religion}}
+						}
+						change_religion = {{religion}}
+					}
+				% end
+			}
+		}
+	}
+
+	option = {
+		name = "SOLA_FIDE_RELIGION_ENTRENCHED_ACCEPT"
+	}
+}

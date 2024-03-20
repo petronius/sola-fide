@@ -16,9 +16,7 @@ on_province_religion_converted = {
 			name = sola_fide.religious_minority.{{religion}}
 			duration = -1
 		}
-		remove_province_modifier = {
-			name = sola_fide.religion_entrenched.{{religion}}
-		}
+		remove_province_modifier = sola_fide.religion_entrenched.{{religion}}
 	}
 	% end
 
