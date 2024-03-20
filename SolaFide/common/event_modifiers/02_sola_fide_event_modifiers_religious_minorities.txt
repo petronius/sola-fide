@@ -1,0 +1,272 @@
+﻿sola_fide.religious_minority.catholic = {
+        local_unrest = 0.5
+        local_religious_unity_contribution = -0.01
+        picture = "church_loyalty_modifier_opposite"
+}
+sola_fide.religion_entrenched.catholic = {
+        local_missionary_strength = -0.005
+}
+sola_fide.religious_minority.protestant = {
+        local_unrest = 0.5
+        local_religious_unity_contribution = -0.01
+        picture = "church_loyalty_modifier_opposite"
+}
+sola_fide.religion_entrenched.protestant = {
+        local_missionary_strength = -0.005
+}
+sola_fide.religious_minority.reformed = {
+        local_unrest = 0.5
+        local_religious_unity_contribution = -0.01
+        picture = "church_loyalty_modifier_opposite"
+}
+sola_fide.religion_entrenched.reformed = {
+        local_missionary_strength = -0.005
+}
+sola_fide.religious_minority.anglican = {
+        local_unrest = 0.5
+        local_religious_unity_contribution = -0.01
+        picture = "church_loyalty_modifier_opposite"
+}
+sola_fide.religion_entrenched.anglican = {
+        local_missionary_strength = -0.005
+}
+sola_fide.religious_minority.orthodox = {
+        local_unrest = 0.5
+        local_religious_unity_contribution = -0.01
+        picture = "church_loyalty_modifier_opposite"
+}
+sola_fide.religion_entrenched.orthodox = {
+        local_missionary_strength = -0.005
+}
+sola_fide.religious_minority.coptic = {
+        local_unrest = 0.5
+        local_religious_unity_contribution = -0.01
+        picture = "church_loyalty_modifier_opposite"
+}
+sola_fide.religion_entrenched.coptic = {
+        local_missionary_strength = -0.005
+}
+sola_fide.religious_minority.lollard = {
+        local_unrest = 0.5
+        local_religious_unity_contribution = -0.01
+        picture = "church_loyalty_modifier_opposite"
+}
+sola_fide.religion_entrenched.lollard = {
+        local_missionary_strength = -0.005
+}
+sola_fide.religious_minority.anabaptist = {
+        local_unrest = 0.5
+        local_religious_unity_contribution = -0.01
+        picture = "church_loyalty_modifier_opposite"
+}
+sola_fide.religion_entrenched.anabaptist = {
+        local_missionary_strength = -0.005
+}
+sola_fide.religious_minority.waldensian = {
+        local_unrest = 0.5
+        local_religious_unity_contribution = -0.01
+        picture = "church_loyalty_modifier_opposite"
+}
+sola_fide.religion_entrenched.waldensian = {
+        local_missionary_strength = -0.005
+}
+sola_fide.religious_minority.dissenter = {
+        local_unrest = 0.5
+        local_religious_unity_contribution = -0.01
+        picture = "church_loyalty_modifier_opposite"
+}
+sola_fide.religion_entrenched.dissenter = {
+        local_missionary_strength = -0.005
+}
+sola_fide.religious_minority.jewish = {
+        local_unrest = 0.5
+        local_religious_unity_contribution = -0.01
+        picture = "church_loyalty_modifier_opposite"
+}
+sola_fide.religion_entrenched.jewish = {
+        local_missionary_strength = -0.005
+}
+sola_fide.religious_minority.karaite = {
+        local_unrest = 0.5
+        local_religious_unity_contribution = -0.01
+        picture = "church_loyalty_modifier_opposite"
+}
+sola_fide.religion_entrenched.karaite = {
+        local_missionary_strength = -0.005
+}
+sola_fide.religious_minority.samaritan = {
+        local_unrest = 0.5
+        local_religious_unity_contribution = -0.01
+        picture = "church_loyalty_modifier_opposite"
+}
+sola_fide.religion_entrenched.samaritan = {
+        local_missionary_strength = -0.005
+}
+sola_fide.religious_minority.sunni = {
+        local_unrest = 0.5
+        local_religious_unity_contribution = -0.01
+        picture = "church_loyalty_modifier_opposite"
+}
+sola_fide.religion_entrenched.sunni = {
+        local_missionary_strength = -0.005
+}
+sola_fide.religious_minority.shia = {
+        local_unrest = 0.5
+        local_religious_unity_contribution = -0.01
+        picture = "church_loyalty_modifier_opposite"
+}
+sola_fide.religion_entrenched.shia = {
+        local_missionary_strength = -0.005
+}
+sola_fide.religious_minority.ibadi = {
+        local_unrest = 0.5
+        local_religious_unity_contribution = -0.01
+        picture = "church_loyalty_modifier_opposite"
+}
+sola_fide.religion_entrenched.ibadi = {
+        local_missionary_strength = -0.005
+}
+sola_fide.religious_minority.buddhist = {
+        local_unrest = 0.5
+        local_religious_unity_contribution = -0.01
+        picture = "church_loyalty_modifier_opposite"
+}
+sola_fide.religion_entrenched.buddhist = {
+        local_missionary_strength = -0.005
+}
+sola_fide.religious_minority.vajrayana = {
+        local_unrest = 0.5
+        local_religious_unity_contribution = -0.01
+        picture = "church_loyalty_modifier_opposite"
+}
+sola_fide.religion_entrenched.vajrayana = {
+        local_missionary_strength = -0.005
+}
+sola_fide.religious_minority.mahayana = {
+        local_unrest = 0.5
+        local_religious_unity_contribution = -0.01
+        picture = "church_loyalty_modifier_opposite"
+}
+sola_fide.religion_entrenched.mahayana = {
+        local_missionary_strength = -0.005
+}
+sola_fide.religious_minority.confucian = {
+        local_unrest = 0.5
+        local_religious_unity_contribution = -0.01
+        picture = "church_loyalty_modifier_opposite"
+}
+sola_fide.religion_entrenched.confucian = {
+        local_missionary_strength = -0.005
+}
+sola_fide.religious_minority.shinto = {
+        local_unrest = 0.5
+        local_religious_unity_contribution = -0.01
+        picture = "church_loyalty_modifier_opposite"
+}
+sola_fide.religion_entrenched.shinto = {
+        local_missionary_strength = -0.005
+}
+sola_fide.religious_minority.hindu = {
+        local_unrest = 0.5
+        local_religious_unity_contribution = -0.01
+        picture = "church_loyalty_modifier_opposite"
+}
+sola_fide.religion_entrenched.hindu = {
+        local_missionary_strength = -0.005
+}
+sola_fide.religious_minority.sikh = {
+        local_unrest = 0.5
+        local_religious_unity_contribution = -0.01
+        picture = "church_loyalty_modifier_opposite"
+}
+sola_fide.religion_entrenched.sikh = {
+        local_missionary_strength = -0.005
+}
+sola_fide.religious_minority.animism = {
+        local_unrest = 0.5
+        local_religious_unity_contribution = -0.01
+        picture = "church_loyalty_modifier_opposite"
+}
+sola_fide.religion_entrenched.animism = {
+        local_missionary_strength = -0.005
+}
+sola_fide.religious_minority.shamanism = {
+        local_unrest = 0.5
+        local_religious_unity_contribution = -0.01
+        picture = "church_loyalty_modifier_opposite"
+}
+sola_fide.religion_entrenched.shamanism = {
+        local_missionary_strength = -0.005
+}
+sola_fide.religious_minority.totemism = {
+        local_unrest = 0.5
+        local_religious_unity_contribution = -0.01
+        picture = "church_loyalty_modifier_opposite"
+}
+sola_fide.religion_entrenched.totemism = {
+        local_missionary_strength = -0.005
+}
+sola_fide.religious_minority.inti = {
+        local_unrest = 0.5
+        local_religious_unity_contribution = -0.01
+        picture = "church_loyalty_modifier_opposite"
+}
+sola_fide.religion_entrenched.inti = {
+        local_missionary_strength = -0.005
+}
+sola_fide.religious_minority.nahuatl = {
+        local_unrest = 0.5
+        local_religious_unity_contribution = -0.01
+        picture = "church_loyalty_modifier_opposite"
+}
+sola_fide.religion_entrenched.nahuatl = {
+        local_missionary_strength = -0.005
+}
+sola_fide.religious_minority.mesoamerican = {
+        local_unrest = 0.5
+        local_religious_unity_contribution = -0.01
+        picture = "church_loyalty_modifier_opposite"
+}
+sola_fide.religion_entrenched.mesoamerican = {
+        local_missionary_strength = -0.005
+}
+sola_fide.religious_minority.norse_pagan = {
+        local_unrest = 0.5
+        local_religious_unity_contribution = -0.01
+        picture = "church_loyalty_modifier_opposite"
+}
+sola_fide.religion_entrenched.norse_pagan = {
+        local_missionary_strength = -0.005
+}
+sola_fide.religious_minority.baltic_pagan = {
+        local_unrest = 0.5
+        local_religious_unity_contribution = -0.01
+        picture = "church_loyalty_modifier_opposite"
+}
+sola_fide.religion_entrenched.baltic_pagan = {
+        local_missionary_strength = -0.005
+}
+sola_fide.religious_minority.tengri_pagan = {
+        local_unrest = 0.5
+        local_religious_unity_contribution = -0.01
+        picture = "church_loyalty_modifier_opposite"
+}
+sola_fide.religion_entrenched.tengri_pagan = {
+        local_missionary_strength = -0.005
+}
+sola_fide.religious_minority.zoroastrian = {
+        local_unrest = 0.5
+        local_religious_unity_contribution = -0.01
+        picture = "church_loyalty_modifier_opposite"
+}
+sola_fide.religion_entrenched.zoroastrian = {
+        local_missionary_strength = -0.005
+}
+sola_fide.religious_minority.dreamtime = {
+        local_unrest = 0.5
+        local_religious_unity_contribution = -0.01
+        picture = "church_loyalty_modifier_opposite"
+}
+sola_fide.religion_entrenched.dreamtime = {
+        local_missionary_strength = -0.005
+}

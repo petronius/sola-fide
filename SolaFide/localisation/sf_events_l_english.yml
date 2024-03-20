@@ -1,0 +1,4 @@
+﻿l_english:
+ sola_fide_religion_entrenched_title:0 "Religion entrenched!"
+ sola_fide_religion_entrenched_desc:0 "The religious commuinity in [Root.GetName] has banded together to resist conversion. Our efforts will continue, but we can expect a persistent minority of [Root.Religion.GetName]s to remain even if we are successful."
+ SOLA_FIDE_RELIGION_ENTRENCHED_ACCEPT:0 "We will have to accept this."
