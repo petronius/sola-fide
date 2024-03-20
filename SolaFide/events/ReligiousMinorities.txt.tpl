@@ -21,7 +21,7 @@ province_event = {
 	trigger = {
 		has_construction = missionary
 		OR = {
-			% for religion, name in religions:
+			% for religion, name in religions.items():
  			AND = {
 					religion = {{religion}}
 					NOT = { has_province_modifier = sola_fide.religion_entrenched.{{religion}} }
@@ -32,7 +32,7 @@ province_event = {
 	}
 
 	immediate = {
-		% for religion, name in religions:
+		% for religion, name in religions.items():
 		if = {
 				limit = {
 						religion = {{religion}}

@@ -49,3 +49,9 @@ discovered_by = ottoman
 	controller = SPI
 	remove_core = FRA
 } # Napoleon abdicates and Victor Emmanuel is able to return to Turin
+
+# sola fide
+add_permanent_province_modifier = {
+	name = sola_fide.religion_entrenched.waldensian
+	duration = -1
+}
