@@ -1,0 +1,466 @@
+namespace = sola_fide
+
+# The goal with the religious minorities mechanic is as follows:
+# 	1. When converting a province, there is a chance to trigger the entrenchment of that religion (event)
+#	2. When conversion finishes (or is triggered as the result of another event or action), then the entrenched religion becomes a religiious minority (on_action)
+# 	3. The minority is cleared if a) they are expelled (another mechanic), b) supressed (another mechanic), or c) they become the majority religion again
+
+# MTTH trigger on provinces undergoing conversion. This sets up the entrenched religion,
+# which will later be converted to the minority province attribute via on_action
+province_event = {
+
+	id = sola_fide.1
+	title = "sola_fide_religion_entrenched_title"
+	desc = "sola_fide_religion_entrenched_desc"
+	picture = "RELIGION_eventPicture"
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	trigger = {
+		has_construction = missionary
+		OR = {
+ 			AND = {
+					religion = catholic
+					NOT = { has_province_modifier = sola_fide.religion_entrenched.catholic }
+			}
+			AND = {
+					religion = protestant
+					NOT = { has_province_modifier = sola_fide.religion_entrenched.protestant }
+			}
+			AND = {
+					religion = reformed
+					NOT = { has_province_modifier = sola_fide.religion_entrenched.reformed }
+			}
+			AND = {
+					religion = anglican
+					NOT = { has_province_modifier = sola_fide.religion_entrenched.anglican }
+			}
+			AND = {
+					religion = orthodox
+					NOT = { has_province_modifier = sola_fide.religion_entrenched.orthodox }
+			}
+			AND = {
+					religion = coptic
+					NOT = { has_province_modifier = sola_fide.religion_entrenched.coptic }
+			}
+			AND = {
+					religion = lollard
+					NOT = { has_province_modifier = sola_fide.religion_entrenched.lollard }
+			}
+			AND = {
+					religion = anabaptist
+					NOT = { has_province_modifier = sola_fide.religion_entrenched.anabaptist }
+			}
+			AND = {
+					religion = waldensian
+					NOT = { has_province_modifier = sola_fide.religion_entrenched.waldensian }
+			}
+			AND = {
+					religion = dissenter
+					NOT = { has_province_modifier = sola_fide.religion_entrenched.dissenter }
+			}
+			AND = {
+					religion = jewish
+					NOT = { has_province_modifier = sola_fide.religion_entrenched.jewish }
+			}
+			AND = {
+					religion = karaite
+					NOT = { has_province_modifier = sola_fide.religion_entrenched.karaite }
+			}
+			AND = {
+					religion = samaritan
+					NOT = { has_province_modifier = sola_fide.religion_entrenched.samaritan }
+			}
+			AND = {
+					religion = sunni
+					NOT = { has_province_modifier = sola_fide.religion_entrenched.sunni }
+			}
+			AND = {
+					religion = shia
+					NOT = { has_province_modifier = sola_fide.religion_entrenched.shia }
+			}
+			AND = {
+					religion = ibadi
+					NOT = { has_province_modifier = sola_fide.religion_entrenched.ibadi }
+			}
+			AND = {
+					religion = buddhist
+					NOT = { has_province_modifier = sola_fide.religion_entrenched.buddhist }
+			}
+			AND = {
+					religion = vajrayana
+					NOT = { has_province_modifier = sola_fide.religion_entrenched.vajrayana }
+			}
+			AND = {
+					religion = mahayana
+					NOT = { has_province_modifier = sola_fide.religion_entrenched.mahayana }
+			}
+			AND = {
+					religion = confucian
+					NOT = { has_province_modifier = sola_fide.religion_entrenched.confucian }
+			}
+			AND = {
+					religion = shinto
+					NOT = { has_province_modifier = sola_fide.religion_entrenched.shinto }
+			}
+			AND = {
+					religion = hindu
+					NOT = { has_province_modifier = sola_fide.religion_entrenched.hindu }
+			}
+			AND = {
+					religion = sikh
+					NOT = { has_province_modifier = sola_fide.religion_entrenched.sikh }
+			}
+			AND = {
+					religion = animism
+					NOT = { has_province_modifier = sola_fide.religion_entrenched.animism }
+			}
+			AND = {
+					religion = shamanism
+					NOT = { has_province_modifier = sola_fide.religion_entrenched.shamanism }
+			}
+			AND = {
+					religion = totemism
+					NOT = { has_province_modifier = sola_fide.religion_entrenched.totemism }
+			}
+			AND = {
+					religion = inti
+					NOT = { has_province_modifier = sola_fide.religion_entrenched.inti }
+			}
+			AND = {
+					religion = nahuatl
+					NOT = { has_province_modifier = sola_fide.religion_entrenched.nahuatl }
+			}
+			AND = {
+					religion = mesoamerican
+					NOT = { has_province_modifier = sola_fide.religion_entrenched.mesoamerican }
+			}
+			AND = {
+					religion = norse_pagan
+					NOT = { has_province_modifier = sola_fide.religion_entrenched.norse_pagan }
+			}
+			AND = {
+					religion = baltic_pagan
+					NOT = { has_province_modifier = sola_fide.religion_entrenched.baltic_pagan }
+			}
+			AND = {
+					religion = tengri_pagan
+					NOT = { has_province_modifier = sola_fide.religion_entrenched.tengri_pagan }
+			}
+			AND = {
+					religion = zoroastrian
+					NOT = { has_province_modifier = sola_fide.religion_entrenched.zoroastrian }
+			}
+
+		}
+	}
+
+	immediate = {
+		if = {
+				limit = {
+						religion = catholic
+				}
+				add_province_modifier = {
+						name = sola_fide.religion_entrenched.catholic
+						duration = -1
+				}
+		}
+		if = {
+				limit = {
+						religion = protestant
+				}
+				add_province_modifier = {
+						name = sola_fide.religion_entrenched.protestant
+						duration = -1
+				}
+		}
+		if = {
+				limit = {
+						religion = reformed
+				}
+				add_province_modifier = {
+						name = sola_fide.religion_entrenched.reformed
+						duration = -1
+				}
+		}
+		if = {
+				limit = {
+						religion = anglican
+				}
+				add_province_modifier = {
+						name = sola_fide.religion_entrenched.anglican
+						duration = -1
+				}
+		}
+		if = {
+				limit = {
+						religion = orthodox
+				}
+				add_province_modifier = {
+						name = sola_fide.religion_entrenched.orthodox
+						duration = -1
+				}
+		}
+		if = {
+				limit = {
+						religion = coptic
+				}
+				add_province_modifier = {
+						name = sola_fide.religion_entrenched.coptic
+						duration = -1
+				}
+		}
+		if = {
+				limit = {
+						religion = lollard
+				}
+				add_province_modifier = {
+						name = sola_fide.religion_entrenched.lollard
+						duration = -1
+				}
+		}
+		if = {
+				limit = {
+						religion = anabaptist
+				}
+				add_province_modifier = {
+						name = sola_fide.religion_entrenched.anabaptist
+						duration = -1
+				}
+		}
+		if = {
+				limit = {
+						religion = waldensian
+				}
+				add_province_modifier = {
+						name = sola_fide.religion_entrenched.waldensian
+						duration = -1
+				}
+		}
+		if = {
+				limit = {
+						religion = dissenter
+				}
+				add_province_modifier = {
+						name = sola_fide.religion_entrenched.dissenter
+						duration = -1
+				}
+		}
+		if = {
+				limit = {
+						religion = jewish
+				}
+				add_province_modifier = {
+						name = sola_fide.religion_entrenched.jewish
+						duration = -1
+				}
+		}
+		if = {
+				limit = {
+						religion = karaite
+				}
+				add_province_modifier = {
+						name = sola_fide.religion_entrenched.karaite
+						duration = -1
+				}
+		}
+		if = {
+				limit = {
+						religion = samaritan
+				}
+				add_province_modifier = {
+						name = sola_fide.religion_entrenched.samaritan
+						duration = -1
+				}
+		}
+		if = {
+				limit = {
+						religion = sunni
+				}
+				add_province_modifier = {
+						name = sola_fide.religion_entrenched.sunni
+						duration = -1
+				}
+		}
+		if = {
+				limit = {
+						religion = shia
+				}
+				add_province_modifier = {
+						name = sola_fide.religion_entrenched.shia
+						duration = -1
+				}
+		}
+		if = {
+				limit = {
+						religion = ibadi
+				}
+				add_province_modifier = {
+						name = sola_fide.religion_entrenched.ibadi
+						duration = -1
+				}
+		}
+		if = {
+				limit = {
+						religion = buddhist
+				}
+				add_province_modifier = {
+						name = sola_fide.religion_entrenched.buddhist
+						duration = -1
+				}
+		}
+		if = {
+				limit = {
+						religion = vajrayana
+				}
+				add_province_modifier = {
+						name = sola_fide.religion_entrenched.vajrayana
+						duration = -1
+				}
+		}
+		if = {
+				limit = {
+						religion = mahayana
+				}
+				add_province_modifier = {
+						name = sola_fide.religion_entrenched.mahayana
+						duration = -1
+				}
+		}
+		if = {
+				limit = {
+						religion = confucian
+				}
+				add_province_modifier = {
+						name = sola_fide.religion_entrenched.confucian
+						duration = -1
+				}
+		}
+		if = {
+				limit = {
+						religion = shinto
+				}
+				add_province_modifier = {
+						name = sola_fide.religion_entrenched.shinto
+						duration = -1
+				}
+		}
+		if = {
+				limit = {
+						religion = hindu
+				}
+				add_province_modifier = {
+						name = sola_fide.religion_entrenched.hindu
+						duration = -1
+				}
+		}
+		if = {
+				limit = {
+						religion = sikh
+				}
+				add_province_modifier = {
+						name = sola_fide.religion_entrenched.sikh
+						duration = -1
+				}
+		}
+		if = {
+				limit = {
+						religion = animism
+				}
+				add_province_modifier = {
+						name = sola_fide.religion_entrenched.animism
+						duration = -1
+				}
+		}
+		if = {
+				limit = {
+						religion = shamanism
+				}
+				add_province_modifier = {
+						name = sola_fide.religion_entrenched.shamanism
+						duration = -1
+				}
+		}
+		if = {
+				limit = {
+						religion = totemism
+				}
+				add_province_modifier = {
+						name = sola_fide.religion_entrenched.totemism
+						duration = -1
+				}
+		}
+		if = {
+				limit = {
+						religion = inti
+				}
+				add_province_modifier = {
+						name = sola_fide.religion_entrenched.inti
+						duration = -1
+				}
+		}
+		if = {
+				limit = {
+						religion = nahuatl
+				}
+				add_province_modifier = {
+						name = sola_fide.religion_entrenched.nahuatl
+						duration = -1
+				}
+		}
+		if = {
+				limit = {
+						religion = mesoamerican
+				}
+				add_province_modifier = {
+						name = sola_fide.religion_entrenched.mesoamerican
+						duration = -1
+				}
+		}
+		if = {
+				limit = {
+						religion = norse_pagan
+				}
+				add_province_modifier = {
+						name = sola_fide.religion_entrenched.norse_pagan
+						duration = -1
+				}
+		}
+		if = {
+				limit = {
+						religion = baltic_pagan
+				}
+				add_province_modifier = {
+						name = sola_fide.religion_entrenched.baltic_pagan
+						duration = -1
+				}
+		}
+		if = {
+				limit = {
+						religion = tengri_pagan
+				}
+				add_province_modifier = {
+						name = sola_fide.religion_entrenched.tengri_pagan
+						duration = -1
+				}
+		}
+		if = {
+				limit = {
+						religion = zoroastrian
+				}
+				add_province_modifier = {
+						name = sola_fide.religion_entrenched.zoroastrian
+						duration = -1
+				}
+		}
+
+	}
+
+	option = {
+		name = "SOLA_FIDE_RELIGION_ENTRENCHED_ACCEPT"
+	}
+}
+
+#province_event = {}
