@@ -40,11 +40,11 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			set_global_flag = lollard_heresy
-			all_owned_province = {
+			every_owned_province = {
 				limit = {
 					region = british_isles_region
 					OR = {
-						has_province_modifier = "sola_fide.religious_minority.lollards"
+						has_province_modifier = "sola_fide.religious_minority.lollard"
 						religion = lollard
 					}
 				}

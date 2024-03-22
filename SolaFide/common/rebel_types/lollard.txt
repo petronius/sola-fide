@@ -6,7 +6,7 @@ lollard_rebels = {
 
 	color = { 235 115 115 }
 
-	area = nation_religion 				# Sticks to provinces of their religion
+	area = nation
 	government = theocracy 			# Desires Theocracy
 	religion = lollard
 	defection = none					# Will defect to the "best" alternative.
@@ -121,17 +121,55 @@ lollard_rebels = {
 			unrest = 6
 		}
 		modifier = {
+			factor = 2
+			NOT = { religion = lollard }
+		}
+		modifier = {
 			factor = 10
-			has_province_modifier = "sola_fide.religious_minority.lollard"
+			AND = {
+				NOT = { religion = lollard }
+				has_province_modifier = "sola_fide.religious_minority.lollard"
+			}
 		}
 	}
  
  	# Province Scope
- 	siege_won_trigger = {
-		NOT = { local_autonomy = 50 }
-	}
 	siege_won_effect = {
-		add_local_autonomy = 10
+		custom_tooltip = religious_rebels_seige_effect_tooltip
+		hidden_effect = {
+			if = {
+				limit = {
+					OR = {
+						religion = lollard
+						is_reformation_center = yes
+						owner = { religion = lollard }
+					}
+				}
+				add_province_modifier = {
+					name = "religious_violence"
+					duration = 730
+				}
+			}
+			if = {
+				limit = {
+					NOT = { religion = lollard }
+					is_reformation_center = no
+					NOT = { owner = { religion = lollard } }
+				}
+				change_religion = lollard
+				add_province_modifier = {
+					name = "forced_conversion"
+					duration = 730
+				}
+			}
+		}
+		owner = {
+			change_estate_land_share = {
+				estate = estate_church
+				share = 10.0
+				province = ROOT
+			}
+		}
 	}
 	
 	# Country scope
@@ -168,7 +206,7 @@ lollard_rebels = {
 		}
 
 		# Add effects that would normally apply if you lose to religous rebels
-		
+
 		if = {
 			limit = {
 				NOT = { religion_group = christian }
