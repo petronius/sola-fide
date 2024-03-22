@@ -1,13 +1,14 @@
+
 ######################################################################
-# Hinduism rebels. Disgruntled fanatics.
+# waldensian rebels. Disgruntled fanatics.
 ######################################################################
-hinduism_rebels = {
+waldensian_rebels = {
 
 	color = { 230 175 175 }
 
 	area = nation 					# Sticks to provinces of their nation
 	government = theocracy 			# Desires Theocracy
-	religion = hinduism
+	religion = waldensian
 	defection = none				# Will not defect
 	defect_delay = 120				# Held provinces will auto-defect after 18 months, regardless of accept/enforce demands.
 	independence = none				# Does not strive for independence
@@ -54,7 +55,11 @@ hinduism_rebels = {
 		modifier = {
 			factor = 5.0
 			owner = { has_disaster = religious_turmoil }
-		}		
+		}
+		modifier = {
+			factor = 10.0
+			owner = { has_disaster = french_wars_of_religion }
+		}
 		modifier = {
 			factor = 2000
 			has_missionary = yes
@@ -75,13 +80,13 @@ hinduism_rebels = {
 		modifier = {
 			factor = 0.0
 			NOT = {
-				religion = hinduism
-				has_province_modifier = "sola_fide.religious_minority.hinduism"
+				religion = waldensian
+				has_province_modifier = "sola_fide.religious_minority.waldensian"
 			}
 		}
 		modifier = {
 			factor = 10
-			has_province_modifier = "sola_fide.religious_minority.hinduism"
+			has_province_modifier = "sola_fide.religious_minority.waldensian"
 		}
 	}
  
@@ -98,21 +103,21 @@ hinduism_rebels = {
 		}
 		modifier = {
 			factor = 0.0
-			religion = hinduism
-			owner = { religion = hinduism }
+			religion = waldensian
+			owner = { religion = waldensian }
 		}
 		modifier = {
 			factor = 2.0
-			NOT = { religion = hinduism }
+			NOT = { religion = waldensian }
 			any_neighbor_province = {
-	 			religion = hinduism
+	 			religion = waldensian
 	 			NOT = { has_province_modifier = "forced_conversion" }
 	 		}
 	 	}
 		modifier = {
 			factor = 5
 			has_missionary = yes
-			religion = hinduism
+			religion = waldensian
 		}
 		modifier = {
 			factor = 1.5
@@ -129,7 +134,7 @@ hinduism_rebels = {
 		# sola fide
 		modifier = {
 			factor = 10
-			has_province_modifier = "sola_fide.religious_minority.hinduism"
+			has_province_modifier = "sola_fide.religious_minority.waldensian"
 		}
 	}
  
@@ -148,9 +153,9 @@ hinduism_rebels = {
 			if = {
 				limit = {
 					OR = {
-						religion = hinduism
+						religion = waldensian
 						is_reformation_center = yes
-						owner = { religion = hinduism }
+						owner = { religion = waldensian }
 					}
 				}
 				add_province_modifier = {
@@ -160,11 +165,11 @@ hinduism_rebels = {
 			}
 			if = {
 				limit = {
-					NOT = { religion = hinduism }
+					NOT = { religion = waldensian }
 					is_reformation_center = no
-					NOT = { owner = { religion = hinduism } }
+					NOT = { owner = { religion = waldensian } }
 				}
-				change_religion = hinduism
+				change_religion = waldensian
 				add_province_modifier = {
 					name = "forced_conversion"
 					duration = 730
@@ -172,20 +177,10 @@ hinduism_rebels = {
 			}
 		}
 		owner = {
-			if = {
-				limit = { has_estate = estate_brahmins }
-				change_estate_land_share = {
-					estate = estate_brahmins
-					share = 10.0
-					province = ROOT
-				}
-			}
-			else = {
-				change_estate_land_share = {
-					estate = estate_church
-					share = 10.0
-					province = ROOT
-				}
+			change_estate_land_share = {
+				estate = estate_church
+				share = 10.0
+				province = ROOT
 			}
 		}
 	}
@@ -193,8 +188,8 @@ hinduism_rebels = {
 	# Country scope
 	can_negotiate_trigger = {
 		OR = {
-			religion_group = dharmic
-			dominant_religion = hinduism
+			religion_group = christian
+			dominant_religion = waldensian
 		}
 	}
 	
@@ -204,7 +199,7 @@ hinduism_rebels = {
 	}
 	
 	# Localisation for their demands
-	demands_description = "hinduism_rebels_demand"
+	demands_description = "waldensian_rebels_demand"
 	
 	# Country Scope	
 	demands_enforced_effect = {
@@ -217,7 +212,7 @@ hinduism_rebels = {
 		}
 		if = {
 			limit = {
-				NOT = { religion_group = dharmic }
+				NOT = { religion_group = christian }
 			}
 			add_prestige = -50
 			every_owned_province = {
@@ -227,28 +222,25 @@ hinduism_rebels = {
 				add_local_autonomy = 20
 			}
 		}
-		
 		if = {
 			limit = {
 				tag = PAP
 			}
 			add_stability = -1
-			add_country_modifier = {
-				name = "heretic_tolerance"
-				duration = 3650
-			}
 		}
+		
 		else_if = {
 			limit = {
-				NOT = { religion = hinduism }
-				dominant_religion = hinduism
+				NOT = { religion = waldensian }
+				dominant_religion = waldensian
+				NOT = { tag = PAP }
 			}
-			change_religion = hinduism
+			change_religion = waldensian
 			force_converted = yes
 		}
 		else_if = {
 			limit = {
-				religion = hinduism
+				religion = waldensian
 			}
 			add_country_modifier = {
 				name = "religious_intolerance_enforced"
@@ -257,10 +249,10 @@ hinduism_rebels = {
 		}
 		else_if = {
 			limit = {
-				NOT = { religion = hinduism }
-				NOT = { dominant_religion = hinduism }
-				religion_group = dharmic
+				NOT = { religion = waldensian }
+				NOT = { dominant_religion = waldensian }
 				NOT = { has_country_modifier = heretic_tolerance }
+				religion_group = christian
 			}
 			add_country_modifier = {
 				name = "heretic_tolerance"
@@ -270,7 +262,7 @@ hinduism_rebels = {
 		else = { add_stability = -1 } #Should probably never get here
 		if = {
 			limit = {
-				religion = hinduism
+				religion = waldensian
 				has_estate = estate_church
 				NOT = {
 					has_estate_influence_modifier = {
@@ -287,23 +279,22 @@ hinduism_rebels = {
 			}
 		}
 		if = {
-			limit = {
-				has_idea_group = indian_muslim_ideas 
+			limit = { has_disaster = french_wars_of_religion }
+			end_disaster = french_wars_of_religion
+			remove_country_modifier = french_catholics
+			remove_country_modifier = french_protestants
+			remove_country_modifier = french_reformed
+			remove_country_modifier = support_heretics
+			set_country_flag = FRA_had_event_3199
+			set_country_flag = FRA_wars_of_religion_ended
+			capital_scope = {
+				remove_province_modifier = religious_fanatics
 			}
-			swap_free_idea_group = yes
 		}
-		if = {
-			limit = { has_estate = estate_brahmins }
-			change_estate_land_share = {
-				estate = estate_brahmins
-				share = 10.0
-			}
-		}
-		else = {
-			change_estate_land_share = {
-				estate = estate_church
-				share = 10.0
-			}
+		change_estate_land_share = {
+			estate = estate_church
+			share = 10.0
 		}
 	}
 }
+

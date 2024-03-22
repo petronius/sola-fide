@@ -76,7 +76,7 @@ anglican_rebels = {
 			factor = 0.0
 			NOT = {
 				religion = anglican
-				has_province_modifier = "sola_fide.religious_minority.buddhism"
+				has_province_modifier = "sola_fide.religious_minority.anglican"
 			}
 		}
 		modifier = {

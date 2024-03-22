@@ -69,6 +69,16 @@ on_province_religion_converted = {
 	}
 	if = {
 		limit = {
+			has_province_modifier = sola_fide.religion_entrenched.hussite
+		}
+		add_permanent_province_modifier = {
+			name = sola_fide.religious_minority.hussite
+			duration = -1
+		}
+		remove_province_modifier = sola_fide.religion_entrenched.hussite
+	}
+	if = {
+		limit = {
 			has_province_modifier = sola_fide.religion_entrenched.lollard
 		}
 		add_permanent_province_modifier = {
@@ -149,13 +159,13 @@ on_province_religion_converted = {
 	}
 	if = {
 		limit = {
-			has_province_modifier = sola_fide.religion_entrenched.shia
+			has_province_modifier = sola_fide.religion_entrenched.shiite
 		}
 		add_permanent_province_modifier = {
-			name = sola_fide.religious_minority.shia
+			name = sola_fide.religious_minority.shiite
 			duration = -1
 		}
-		remove_province_modifier = sola_fide.religion_entrenched.shia
+		remove_province_modifier = sola_fide.religion_entrenched.shiite
 	}
 	if = {
 		limit = {
@@ -169,13 +179,13 @@ on_province_religion_converted = {
 	}
 	if = {
 		limit = {
-			has_province_modifier = sola_fide.religion_entrenched.buddhist
+			has_province_modifier = sola_fide.religion_entrenched.buddhism
 		}
 		add_permanent_province_modifier = {
-			name = sola_fide.religious_minority.buddhist
+			name = sola_fide.religious_minority.buddhism
 			duration = -1
 		}
-		remove_province_modifier = sola_fide.religion_entrenched.buddhist
+		remove_province_modifier = sola_fide.religion_entrenched.buddhism
 	}
 	if = {
 		limit = {
@@ -199,13 +209,13 @@ on_province_religion_converted = {
 	}
 	if = {
 		limit = {
-			has_province_modifier = sola_fide.religion_entrenched.confucian
+			has_province_modifier = sola_fide.religion_entrenched.confucianism
 		}
 		add_permanent_province_modifier = {
-			name = sola_fide.religious_minority.confucian
+			name = sola_fide.religious_minority.confucianism
 			duration = -1
 		}
-		remove_province_modifier = sola_fide.religion_entrenched.confucian
+		remove_province_modifier = sola_fide.religion_entrenched.confucianism
 	}
 	if = {
 		limit = {
@@ -219,23 +229,23 @@ on_province_religion_converted = {
 	}
 	if = {
 		limit = {
-			has_province_modifier = sola_fide.religion_entrenched.hindu
+			has_province_modifier = sola_fide.religion_entrenched.hinduism
 		}
 		add_permanent_province_modifier = {
-			name = sola_fide.religious_minority.hindu
+			name = sola_fide.religious_minority.hinduism
 			duration = -1
 		}
-		remove_province_modifier = sola_fide.religion_entrenched.hindu
+		remove_province_modifier = sola_fide.religion_entrenched.hinduism
 	}
 	if = {
 		limit = {
-			has_province_modifier = sola_fide.religion_entrenched.sikh
+			has_province_modifier = sola_fide.religion_entrenched.sikhism
 		}
 		add_permanent_province_modifier = {
-			name = sola_fide.religious_minority.sikh
+			name = sola_fide.religious_minority.sikhism
 			duration = -1
 		}
-		remove_province_modifier = sola_fide.religion_entrenched.sikh
+		remove_province_modifier = sola_fide.religion_entrenched.sikhism
 	}
 	if = {
 		limit = {
@@ -289,23 +299,23 @@ on_province_religion_converted = {
 	}
 	if = {
 		limit = {
-			has_province_modifier = sola_fide.religion_entrenched.mesoamerican
+			has_province_modifier = sola_fide.religion_entrenched.mesoamerican_religion
 		}
 		add_permanent_province_modifier = {
-			name = sola_fide.religious_minority.mesoamerican
+			name = sola_fide.religious_minority.mesoamerican_religion
 			duration = -1
 		}
-		remove_province_modifier = sola_fide.religion_entrenched.mesoamerican
+		remove_province_modifier = sola_fide.religion_entrenched.mesoamerican_religion
 	}
 	if = {
 		limit = {
-			has_province_modifier = sola_fide.religion_entrenched.norse_pagan
+			has_province_modifier = sola_fide.religion_entrenched.norse_pagan_reformed
 		}
 		add_permanent_province_modifier = {
-			name = sola_fide.religious_minority.norse_pagan
+			name = sola_fide.religious_minority.norse_pagan_reformed
 			duration = -1
 		}
-		remove_province_modifier = sola_fide.religion_entrenched.norse_pagan
+		remove_province_modifier = sola_fide.religion_entrenched.norse_pagan_reformed
 	}
 	if = {
 		limit = {
@@ -319,13 +329,13 @@ on_province_religion_converted = {
 	}
 	if = {
 		limit = {
-			has_province_modifier = sola_fide.religion_entrenched.tengri_pagan
+			has_province_modifier = sola_fide.religion_entrenched.tengri_pagan_reformed
 		}
 		add_permanent_province_modifier = {
-			name = sola_fide.religious_minority.tengri_pagan
+			name = sola_fide.religious_minority.tengri_pagan_reformed
 			duration = -1
 		}
-		remove_province_modifier = sola_fide.religion_entrenched.tengri_pagan
+		remove_province_modifier = sola_fide.religion_entrenched.tengri_pagan_reformed
 	}
 	if = {
 		limit = {

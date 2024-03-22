@@ -8,3 +8,9 @@ sola_fide.loyal_catholics = {
 sola_fide.expulsion_of_jews = {
 
 }
+
+# Modified version of the base game modifier
+sola_fide.lollards = {
+	local_unrest = 10
+	local_autonomy = 0.2
+}

@@ -131,6 +131,11 @@ coptic_rebels = {
 			factor = 1.5
 			unrest = 6
 		}
+		# sola fide
+		modifier = {
+			factor = 10
+			has_province_modifier = "sola_fide.religious_minority.coptic"
+		}
 	}
  
  	# Province Scope

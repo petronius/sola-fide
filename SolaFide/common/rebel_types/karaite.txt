@@ -1,17 +1,17 @@
 ######################################################################
-# Hinduism rebels. Disgruntled fanatics.
+# karaite rebels. Disgruntled fanatics.
 ######################################################################
-hinduism_rebels = {
+karaite_rebels = {
 
 	color = { 230 175 175 }
 
 	area = nation 					# Sticks to provinces of their nation
 	government = theocracy 			# Desires Theocracy
-	religion = hinduism
-	defection = none				# Will not defect
+	religion = karaite
+	defection = religion			# Defects to countries of their religion
 	defect_delay = 120				# Held provinces will auto-defect after 18 months, regardless of accept/enforce demands.
 	independence = none				# Does not strive for independence
-	unit_transfer = no
+	unit_transfer = yes
 	gfx_type = culture_province
 	will_relocate = yes	
 	
@@ -53,7 +53,7 @@ hinduism_rebels = {
 		}
 		modifier = {
 			factor = 5.0
-			owner = { has_disaster = religious_turmoil }
+			owner = { has_country_flag = religious_turmoil }
 		}		
 		modifier = {
 			factor = 2000
@@ -75,13 +75,13 @@ hinduism_rebels = {
 		modifier = {
 			factor = 0.0
 			NOT = {
-				religion = hinduism
-				has_province_modifier = "sola_fide.religious_minority.hinduism"
+				religion = karaite
+				has_province_modifier = "sola_fide.religious_minority.karaite"
 			}
 		}
 		modifier = {
 			factor = 10
-			has_province_modifier = "sola_fide.religious_minority.hinduism"
+			has_province_modifier = "sola_fide.religious_minority.karaite"
 		}
 	}
  
@@ -98,21 +98,21 @@ hinduism_rebels = {
 		}
 		modifier = {
 			factor = 0.0
-			religion = hinduism
-			owner = { religion = hinduism }
+			religion = karaite
+			owner = { religion = karaite }
 		}
 		modifier = {
 			factor = 2.0
-			NOT = { religion = hinduism }
+			NOT = { religion = karaite }
 			any_neighbor_province = {
-	 			religion = hinduism
+	 			religion = karaite
 	 			NOT = { has_province_modifier = "forced_conversion" }
 	 		}
 	 	}
 		modifier = {
 			factor = 5
 			has_missionary = yes
-			religion = hinduism
+			religion = karaite
 		}
 		modifier = {
 			factor = 1.5
@@ -129,7 +129,7 @@ hinduism_rebels = {
 		# sola fide
 		modifier = {
 			factor = 10
-			has_province_modifier = "sola_fide.religious_minority.hinduism"
+			has_province_modifier = "sola_fide.religious_minority.karaite"
 		}
 	}
  
@@ -148,9 +148,9 @@ hinduism_rebels = {
 			if = {
 				limit = {
 					OR = {
-						religion = hinduism
+						religion = karaite
 						is_reformation_center = yes
-						owner = { religion = hinduism }
+						owner = { religion = karaite }
 					}
 				}
 				add_province_modifier = {
@@ -160,11 +160,11 @@ hinduism_rebels = {
 			}
 			if = {
 				limit = {
-					NOT = { religion = hinduism }
+					NOT = { religion = karaite }
 					is_reformation_center = no
-					NOT = { owner = { religion = hinduism } }
+					NOT = { owner = { religion = karaite } }
 				}
-				change_religion = hinduism
+				change_religion = karaite
 				add_province_modifier = {
 					name = "forced_conversion"
 					duration = 730
@@ -172,20 +172,10 @@ hinduism_rebels = {
 			}
 		}
 		owner = {
-			if = {
-				limit = { has_estate = estate_brahmins }
-				change_estate_land_share = {
-					estate = estate_brahmins
-					share = 10.0
-					province = ROOT
-				}
-			}
-			else = {
-				change_estate_land_share = {
-					estate = estate_church
-					share = 10.0
-					province = ROOT
-				}
+			change_estate_land_share = {
+				estate = estate_church
+				share = 10.0
+				province = ROOT
 			}
 		}
 	}
@@ -193,8 +183,8 @@ hinduism_rebels = {
 	# Country scope
 	can_negotiate_trigger = {
 		OR = {
-			religion_group = dharmic
-			dominant_religion = hinduism
+			religion_group = karaite_group
+			dominant_religion = karaite
 		}
 	}
 	
@@ -204,7 +194,7 @@ hinduism_rebels = {
 	}
 	
 	# Localisation for their demands
-	demands_description = "hinduism_rebels_demand"
+	demands_description = "karaite_rebels_demand"
 	
 	# Country Scope	
 	demands_enforced_effect = {
@@ -217,7 +207,7 @@ hinduism_rebels = {
 		}
 		if = {
 			limit = {
-				NOT = { religion_group = dharmic }
+				NOT = { religion_group = karaite_group }
 			}
 			add_prestige = -50
 			every_owned_province = {
@@ -227,50 +217,34 @@ hinduism_rebels = {
 				add_local_autonomy = 20
 			}
 		}
-		
 		if = {
 			limit = {
 				tag = PAP
 			}
 			add_stability = -1
-			add_country_modifier = {
-				name = "heretic_tolerance"
-				duration = 3650
-			}
 		}
 		else_if = {
 			limit = {
-				NOT = { religion = hinduism }
-				dominant_religion = hinduism
-			}
-			change_religion = hinduism
-			force_converted = yes
-		}
-		else_if = {
-			limit = {
-				religion = hinduism
+				religion = karaite
 			}
 			add_country_modifier = {
 				name = "religious_intolerance_enforced"
 				duration = 3650
 			}
 		}
+		
 		else_if = {
 			limit = {
-				NOT = { religion = hinduism }
-				NOT = { dominant_religion = hinduism }
-				religion_group = dharmic
-				NOT = { has_country_modifier = heretic_tolerance }
+				NOT = { religion = karaite }
+				dominant_religion = karaite
 			}
-			add_country_modifier = {
-				name = "heretic_tolerance"
-				duration = 3650
-			}
+			change_religion = karaite
+			force_converted = yes
 		}
 		else = { add_stability = -1 } #Should probably never get here
 		if = {
 			limit = {
-				religion = hinduism
+				religion = karaite
 				has_estate = estate_church
 				NOT = {
 					has_estate_influence_modifier = {
@@ -286,24 +260,9 @@ hinduism_rebels = {
 				influence = 15
 			}
 		}
-		if = {
-			limit = {
-				has_idea_group = indian_muslim_ideas 
-			}
-			swap_free_idea_group = yes
-		}
-		if = {
-			limit = { has_estate = estate_brahmins }
-			change_estate_land_share = {
-				estate = estate_brahmins
-				share = 10.0
-			}
-		}
-		else = {
-			change_estate_land_share = {
-				estate = estate_church
-				share = 10.0
-			}
+		change_estate_land_share = {
+			estate = estate_church
+			share = 10.0
 		}
 	}
 }

@@ -46,6 +46,10 @@ province_event = {
 					NOT = { has_province_modifier = sola_fide.religion_entrenched.coptic }
 			}
  			AND = {
+					religion = hussite
+					NOT = { has_province_modifier = sola_fide.religion_entrenched.hussite }
+			}
+ 			AND = {
 					religion = lollard
 					NOT = { has_province_modifier = sola_fide.religion_entrenched.lollard }
 			}
@@ -78,16 +82,16 @@ province_event = {
 					NOT = { has_province_modifier = sola_fide.religion_entrenched.sunni }
 			}
  			AND = {
-					religion = shia
-					NOT = { has_province_modifier = sola_fide.religion_entrenched.shia }
+					religion = shiite
+					NOT = { has_province_modifier = sola_fide.religion_entrenched.shiite }
 			}
  			AND = {
 					religion = ibadi
 					NOT = { has_province_modifier = sola_fide.religion_entrenched.ibadi }
 			}
  			AND = {
-					religion = buddhist
-					NOT = { has_province_modifier = sola_fide.religion_entrenched.buddhist }
+					religion = buddhism
+					NOT = { has_province_modifier = sola_fide.religion_entrenched.buddhism }
 			}
  			AND = {
 					religion = vajrayana
@@ -98,20 +102,20 @@ province_event = {
 					NOT = { has_province_modifier = sola_fide.religion_entrenched.mahayana }
 			}
  			AND = {
-					religion = confucian
-					NOT = { has_province_modifier = sola_fide.religion_entrenched.confucian }
+					religion = confucianism
+					NOT = { has_province_modifier = sola_fide.religion_entrenched.confucianism }
 			}
  			AND = {
 					religion = shinto
 					NOT = { has_province_modifier = sola_fide.religion_entrenched.shinto }
 			}
  			AND = {
-					religion = hindu
-					NOT = { has_province_modifier = sola_fide.religion_entrenched.hindu }
+					religion = hinduism
+					NOT = { has_province_modifier = sola_fide.religion_entrenched.hinduism }
 			}
  			AND = {
-					religion = sikh
-					NOT = { has_province_modifier = sola_fide.religion_entrenched.sikh }
+					religion = sikhism
+					NOT = { has_province_modifier = sola_fide.religion_entrenched.sikhism }
 			}
  			AND = {
 					religion = animism
@@ -134,20 +138,20 @@ province_event = {
 					NOT = { has_province_modifier = sola_fide.religion_entrenched.nahuatl }
 			}
  			AND = {
-					religion = mesoamerican
-					NOT = { has_province_modifier = sola_fide.religion_entrenched.mesoamerican }
+					religion = mesoamerican_religion
+					NOT = { has_province_modifier = sola_fide.religion_entrenched.mesoamerican_religion }
 			}
  			AND = {
-					religion = norse_pagan
-					NOT = { has_province_modifier = sola_fide.religion_entrenched.norse_pagan }
+					religion = norse_pagan_reformed
+					NOT = { has_province_modifier = sola_fide.religion_entrenched.norse_pagan_reformed }
 			}
  			AND = {
 					religion = baltic_pagan
 					NOT = { has_province_modifier = sola_fide.religion_entrenched.baltic_pagan }
 			}
  			AND = {
-					religion = tengri_pagan
-					NOT = { has_province_modifier = sola_fide.religion_entrenched.tengri_pagan }
+					religion = tengri_pagan_reformed
+					NOT = { has_province_modifier = sola_fide.religion_entrenched.tengri_pagan_reformed }
 			}
  			AND = {
 					religion = zoroastrian
@@ -213,6 +217,15 @@ province_event = {
 				}
 				add_province_modifier = {
 						name = sola_fide.religion_entrenched.coptic
+						duration = -1
+				}
+		}
+		if = {
+				limit = {
+						religion = hussite
+				}
+				add_province_modifier = {
+						name = sola_fide.religion_entrenched.hussite
 						duration = -1
 				}
 		}
@@ -290,10 +303,10 @@ province_event = {
 		}
 		if = {
 				limit = {
-						religion = shia
+						religion = shiite
 				}
 				add_province_modifier = {
-						name = sola_fide.religion_entrenched.shia
+						name = sola_fide.religion_entrenched.shiite
 						duration = -1
 				}
 		}
@@ -308,10 +321,10 @@ province_event = {
 		}
 		if = {
 				limit = {
-						religion = buddhist
+						religion = buddhism
 				}
 				add_province_modifier = {
-						name = sola_fide.religion_entrenched.buddhist
+						name = sola_fide.religion_entrenched.buddhism
 						duration = -1
 				}
 		}
@@ -335,10 +348,10 @@ province_event = {
 		}
 		if = {
 				limit = {
-						religion = confucian
+						religion = confucianism
 				}
 				add_province_modifier = {
-						name = sola_fide.religion_entrenched.confucian
+						name = sola_fide.religion_entrenched.confucianism
 						duration = -1
 				}
 		}
@@ -353,19 +366,19 @@ province_event = {
 		}
 		if = {
 				limit = {
-						religion = hindu
+						religion = hinduism
 				}
 				add_province_modifier = {
-						name = sola_fide.religion_entrenched.hindu
+						name = sola_fide.religion_entrenched.hinduism
 						duration = -1
 				}
 		}
 		if = {
 				limit = {
-						religion = sikh
+						religion = sikhism
 				}
 				add_province_modifier = {
-						name = sola_fide.religion_entrenched.sikh
+						name = sola_fide.religion_entrenched.sikhism
 						duration = -1
 				}
 		}
@@ -416,19 +429,19 @@ province_event = {
 		}
 		if = {
 				limit = {
-						religion = mesoamerican
+						religion = mesoamerican_religion
 				}
 				add_province_modifier = {
-						name = sola_fide.religion_entrenched.mesoamerican
+						name = sola_fide.religion_entrenched.mesoamerican_religion
 						duration = -1
 				}
 		}
 		if = {
 				limit = {
-						religion = norse_pagan
+						religion = norse_pagan_reformed
 				}
 				add_province_modifier = {
-						name = sola_fide.religion_entrenched.norse_pagan
+						name = sola_fide.religion_entrenched.norse_pagan_reformed
 						duration = -1
 				}
 		}
@@ -443,10 +456,10 @@ province_event = {
 		}
 		if = {
 				limit = {
-						religion = tengri_pagan
+						religion = tengri_pagan_reformed
 				}
 				add_province_modifier = {
-						name = sola_fide.religion_entrenched.tengri_pagan
+						name = sola_fide.religion_entrenched.tengri_pagan_reformed
 						duration = -1
 				}
 		}
@@ -478,6 +491,13 @@ province_event = {
 
 namespace = sola_fide_debug
 
+# This is strictly for debugging, to quickly visualize which provinces have what religious minority.
+# (Won't help if a provice has more than one minority, which is certainly possible, but has been added mostly
+# to help with game setup.)
+#
+# To run, execute on the console:
+# 	event sola_fide_debug.1
+#
 province_event = {
 	
 	id = sola_fide_debug.1
@@ -531,6 +551,12 @@ province_event = {
 					}
 					if = {
 						limit = {
+							has_province_modifier = sola_fide.religious_minority.hussite
+						}
+						change_religion = hussite
+					}
+					if = {
+						limit = {
 							has_province_modifier = sola_fide.religious_minority.lollard
 						}
 						change_religion = lollard
@@ -579,9 +605,9 @@ province_event = {
 					}
 					if = {
 						limit = {
-							has_province_modifier = sola_fide.religious_minority.shia
+							has_province_modifier = sola_fide.religious_minority.shiite
 						}
-						change_religion = shia
+						change_religion = shiite
 					}
 					if = {
 						limit = {
@@ -591,9 +617,9 @@ province_event = {
 					}
 					if = {
 						limit = {
-							has_province_modifier = sola_fide.religious_minority.buddhist
+							has_province_modifier = sola_fide.religious_minority.buddhism
 						}
-						change_religion = buddhist
+						change_religion = buddhism
 					}
 					if = {
 						limit = {
@@ -609,9 +635,9 @@ province_event = {
 					}
 					if = {
 						limit = {
-							has_province_modifier = sola_fide.religious_minority.confucian
+							has_province_modifier = sola_fide.religious_minority.confucianism
 						}
-						change_religion = confucian
+						change_religion = confucianism
 					}
 					if = {
 						limit = {
@@ -621,15 +647,15 @@ province_event = {
 					}
 					if = {
 						limit = {
-							has_province_modifier = sola_fide.religious_minority.hindu
+							has_province_modifier = sola_fide.religious_minority.hinduism
 						}
-						change_religion = hindu
+						change_religion = hinduism
 					}
 					if = {
 						limit = {
-							has_province_modifier = sola_fide.religious_minority.sikh
+							has_province_modifier = sola_fide.religious_minority.sikhism
 						}
-						change_religion = sikh
+						change_religion = sikhism
 					}
 					if = {
 						limit = {
@@ -663,15 +689,15 @@ province_event = {
 					}
 					if = {
 						limit = {
-							has_province_modifier = sola_fide.religious_minority.mesoamerican
+							has_province_modifier = sola_fide.religious_minority.mesoamerican_religion
 						}
-						change_religion = mesoamerican
+						change_religion = mesoamerican_religion
 					}
 					if = {
 						limit = {
-							has_province_modifier = sola_fide.religious_minority.norse_pagan
+							has_province_modifier = sola_fide.religious_minority.norse_pagan_reformed
 						}
-						change_religion = norse_pagan
+						change_religion = norse_pagan_reformed
 					}
 					if = {
 						limit = {
@@ -681,9 +707,9 @@ province_event = {
 					}
 					if = {
 						limit = {
-							has_province_modifier = sola_fide.religious_minority.tengri_pagan
+							has_province_modifier = sola_fide.religious_minority.tengri_pagan_reformed
 						}
-						change_religion = tengri_pagan
+						change_religion = tengri_pagan_reformed
 					}
 					if = {
 						limit = {

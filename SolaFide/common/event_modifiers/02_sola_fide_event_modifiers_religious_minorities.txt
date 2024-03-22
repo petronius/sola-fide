@@ -46,6 +46,14 @@ sola_fide.religious_minority.coptic = {
 sola_fide.religion_entrenched.coptic = {
         local_missionary_strength = -0.005
 }
+sola_fide.religious_minority.hussite = {
+        local_unrest = 0.5
+        local_religious_unity_contribution = -0.01
+        picture = "church_loyalty_modifier_opposite"
+}
+sola_fide.religion_entrenched.hussite = {
+        local_missionary_strength = -0.005
+}
 sola_fide.religious_minority.lollard = {
         local_unrest = 0.5
         local_religious_unity_contribution = -0.01
@@ -110,12 +118,12 @@ sola_fide.religious_minority.sunni = {
 sola_fide.religion_entrenched.sunni = {
         local_missionary_strength = -0.005
 }
-sola_fide.religious_minority.shia = {
+sola_fide.religious_minority.shiite = {
         local_unrest = 0.5
         local_religious_unity_contribution = -0.01
         picture = "church_loyalty_modifier_opposite"
 }
-sola_fide.religion_entrenched.shia = {
+sola_fide.religion_entrenched.shiite = {
         local_missionary_strength = -0.005
 }
 sola_fide.religious_minority.ibadi = {
@@ -126,12 +134,12 @@ sola_fide.religious_minority.ibadi = {
 sola_fide.religion_entrenched.ibadi = {
         local_missionary_strength = -0.005
 }
-sola_fide.religious_minority.buddhist = {
+sola_fide.religious_minority.buddhism = {
         local_unrest = 0.5
         local_religious_unity_contribution = -0.01
         picture = "church_loyalty_modifier_opposite"
 }
-sola_fide.religion_entrenched.buddhist = {
+sola_fide.religion_entrenched.buddhism = {
         local_missionary_strength = -0.005
 }
 sola_fide.religious_minority.vajrayana = {
@@ -150,12 +158,12 @@ sola_fide.religious_minority.mahayana = {
 sola_fide.religion_entrenched.mahayana = {
         local_missionary_strength = -0.005
 }
-sola_fide.religious_minority.confucian = {
+sola_fide.religious_minority.confucianism = {
         local_unrest = 0.5
         local_religious_unity_contribution = -0.01
         picture = "church_loyalty_modifier_opposite"
 }
-sola_fide.religion_entrenched.confucian = {
+sola_fide.religion_entrenched.confucianism = {
         local_missionary_strength = -0.005
 }
 sola_fide.religious_minority.shinto = {
@@ -166,20 +174,20 @@ sola_fide.religious_minority.shinto = {
 sola_fide.religion_entrenched.shinto = {
         local_missionary_strength = -0.005
 }
-sola_fide.religious_minority.hindu = {
+sola_fide.religious_minority.hinduism = {
         local_unrest = 0.5
         local_religious_unity_contribution = -0.01
         picture = "church_loyalty_modifier_opposite"
 }
-sola_fide.religion_entrenched.hindu = {
+sola_fide.religion_entrenched.hinduism = {
         local_missionary_strength = -0.005
 }
-sola_fide.religious_minority.sikh = {
+sola_fide.religious_minority.sikhism = {
         local_unrest = 0.5
         local_religious_unity_contribution = -0.01
         picture = "church_loyalty_modifier_opposite"
 }
-sola_fide.religion_entrenched.sikh = {
+sola_fide.religion_entrenched.sikhism = {
         local_missionary_strength = -0.005
 }
 sola_fide.religious_minority.animism = {
@@ -222,20 +230,20 @@ sola_fide.religious_minority.nahuatl = {
 sola_fide.religion_entrenched.nahuatl = {
         local_missionary_strength = -0.005
 }
-sola_fide.religious_minority.mesoamerican = {
+sola_fide.religious_minority.mesoamerican_religion = {
         local_unrest = 0.5
         local_religious_unity_contribution = -0.01
         picture = "church_loyalty_modifier_opposite"
 }
-sola_fide.religion_entrenched.mesoamerican = {
+sola_fide.religion_entrenched.mesoamerican_religion = {
         local_missionary_strength = -0.005
 }
-sola_fide.religious_minority.norse_pagan = {
+sola_fide.religious_minority.norse_pagan_reformed = {
         local_unrest = 0.5
         local_religious_unity_contribution = -0.01
         picture = "church_loyalty_modifier_opposite"
 }
-sola_fide.religion_entrenched.norse_pagan = {
+sola_fide.religion_entrenched.norse_pagan_reformed = {
         local_missionary_strength = -0.005
 }
 sola_fide.religious_minority.baltic_pagan = {
@@ -246,12 +254,12 @@ sola_fide.religious_minority.baltic_pagan = {
 sola_fide.religion_entrenched.baltic_pagan = {
         local_missionary_strength = -0.005
 }
-sola_fide.religious_minority.tengri_pagan = {
+sola_fide.religious_minority.tengri_pagan_reformed = {
         local_unrest = 0.5
         local_religious_unity_contribution = -0.01
         picture = "church_loyalty_modifier_opposite"
 }
-sola_fide.religion_entrenched.tengri_pagan = {
+sola_fide.religion_entrenched.tengri_pagan_reformed = {
         local_missionary_strength = -0.005
 }
 sola_fide.religious_minority.zoroastrian = {
